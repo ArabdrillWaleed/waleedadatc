@@ -1,0 +1,170 @@
+/* Override intro text styles for accreditations page */
+.accreditations .section-header {
+  text-align: left;
+}
+
+.accreditations .section-header .intro-text {
+  color: #264a46;
+  text-align: left;
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: none;
+}
+
+/* Override intro text color and alignment for accreditations page */
+.accreditations .section-header {
+  text-align: left;
+}
+
+.accreditations .section-header .intro-text {
+  color: #264a46;
+  text-align: left;
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: none;
+}
+
+/* New two-column accreditation layout: image on the left, details on the right */
+.accreditations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.accreditation-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #fff;
+  border: 2px solid rgba(2,10,20,0.12);
+  padding: 1.5rem;
+  overflow: hidden;
+  min-height: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.accreditation-card:hover {
+  border-color: rgba(246,99,12,0.3);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.accreditation-media {
+  max-width: 320px;
+  max-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.accreditation-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  display: block;
+}
+
+.accreditation-card:hover .accreditation-image { transform: scale(1.02); }
+
+.accreditation-details { 
+  padding: 0.75rem 0; 
+}
+
+.accreditation-logo { display: none !important; }
+
+.accreditation-year { 
+  color: #f6630c; 
+  font-weight: 700; 
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.accreditation-title { 
+  font-size: 1.65rem; 
+  margin: 0 0 0.75rem; 
+  color: #003c34;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.accreditation-description { 
+  margin: 0 0 0.75rem 0;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1.15rem;
+}
+
+.accreditation-dates {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-top: 0.5rem;
+}
+
+.accreditation-dates .date-item {
+  display: inline;
+}
+
+.accreditation-dates .date-item strong {
+  color: #003c34;
+  font-weight: 600;
+}
+
+.accreditation-dates .date-separator {
+  color: rgba(2,10,20,0.3);
+  font-weight: 300;
+}
+
+/* Mobile alignment fixes */
+@media (max-width: 720px) {
+  /* Hero text alignment */
+  .accreditations .image-hero .hero-text-container {
+    text-align: left !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .accreditations .hero-contact {
+    text-align: left !important;
+    font-size: 24px !important;
+    margin-bottom: 0.4rem !important;
+  }
+  
+  .accreditations .hero-contact-subtitle {
+    text-align: left !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Accreditation cards mobile layout */
+@media (max-width: 900px) {
+  .accreditation-card { 
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    border: 1.5px solid rgba(2,10,20,0.18); /* darker border for mobile too */
+  }
+  .accreditation-media { order: 0; }
+  .accreditation-details { 
+    order: 1;
+    padding: 1rem 0 0.5rem;
+  }
+  .accreditation-image { max-height: 260px; }
+  
+  .accreditation-title {
+    font-size: 1.5rem;
+  }
+  
+  .accreditation-description {
+    font-size: 1.1rem;
+  }
+}

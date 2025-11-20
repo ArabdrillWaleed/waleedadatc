@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | Arabian Drilling</title>
+
+  <!-- Montserrat to match Arabian Drilling -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144.png">
+</head>
+<body class="home">
+  <!-- Site loader (Arabian Drilling-style) -->
+  <div id="site-loader" class="site-loader" role="status" aria-label="Loading site">
+    <div class="site-loader-inner">
+    <img src="images/logo.svg" alt="Arabian Drilling logo" class="loader-logo-img">
+        <div class="loader-bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <!-- full-width image section (now uses rig1) -->
+  <section class="image-hero color-1" aria-hidden="true">
+    <div class="hero-text-container">
+      <div class="hero-contact"><span>Driving</span> <span>Value</span></div>
+      <div class="hero-contact-subtitle"><span>Delivering</span> <span>Excellence</span></div>
+    </div>
+  </section>
+
+    <!-- content panel between the two heroes: training center introduction -->
+    <section class="content-panel container section-padding" aria-label="About the Training Center">
+      <div class="training-intro stack-mobile">
+        <div class="intro-left mobile-px-1">
+          <div class="label">A regional leader in Training </div>
+          <h2>Industry-leading training services backed by a culture of quality, safety, and operational excellence.</h2>
+          <a class="learn-more" href="our-facility.html">View our center →</a>
+        </div>
+
+        <div class="intro-right mobile-px-1">
+          <p>The Objective of the Arabian Drilling Academy Training Center is to enhance employee performance and productivity by providing targeted learning opportunities that align with organizational goals. This involves assessing training needs, designing comprehensive training courses, and delivering effective instruction to equip employees with the necessary skills and knowledge</p>
+
+          <div class="drill-stats mobile-py-2">
+            <div class="drill-icon" aria-hidden="true">
+              <img src="images/teachingsince.svg" alt="" class="trainingsince-icon img-responsive">
+            </div>
+
+            <div>
+              <div class="drilling-since">
+                <div class="since-label">Training since</div>
+                <div class="year">1993</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (moved) Achievements will appear below mission & vision which are now placed under the second hero -->
+
+  <!-- second full-width image (vibrant placeholder) -->
+  <section class="image-hero color-2" data-parallax="true" data-parallax-speed="0.22" aria-hidden="true">
+    <div class="hero-overlay-values" aria-hidden="true">
+      <div class="values-inner container">
+        <div class="values-label">OUR VALUES</div>
+        <h2 class="values-headline">S.T.R.I.V.E For Excellence</h2>
+        <hr class="values-rule top">
+        <div class="values-outline" aria-hidden="true">
+          <span class="outline-letter">S<span class="letter-hover" aria-hidden="true">Safety</span></span>
+          <span class="outline-letter">T<span class="letter-hover" aria-hidden="true">Teamwork</span></span>
+          <span class="outline-letter">R<span class="letter-hover" aria-hidden="true">Reliability</span></span>
+          <span class="outline-letter">I<span class="letter-hover" aria-hidden="true">Integrity</span></span>
+          <span class="outline-letter">V<span class="letter-hover" aria-hidden="true">Value</span></span>
+          <span class="outline-letter">E<span class="letter-hover" aria-hidden="true">Environment</span></span>
+        </div>
+        <hr class="values-rule bottom">
+      </div>
+    </div>
+  </section>
+
+    <!-- Mission & Vision Slider Section -->
+    <section class="content-panel mission-vision-section section-padding">
+      <div class="mv-slider">
+        <div class="mv-slides">
+
+           <div class="mv-slide active" id="vision-slide">
+            <div class="mv-slide-content stack-mobile">
+              <div class="mv-text mobile-px-1">
+                <div class="mv-label">Delivering Excellence</div>
+                <h2>Our Vision</h2>
+                <p>Arabian Drilling Academy Training Center (ADATC) aims to be the leading training institution and preferred partner for industry leaders in Saudi Arabia and the region, recognized for its outstanding quality of education and hands-on training in the energy sector.​</p>
+              </div>
+              <div class="mv-image mobile-py-2">
+                <img src="images/vision.svg" alt="" aria-hidden="true" class="img-responsive">
+              </div>
+            </div>
+          </div>
+
+          <div class="mv-slide" id="mission-slide">
+            <div class="mv-slide-content">
+              <div class="mv-text">
+                <div class="mv-label">Driving Value</div>
+                <h2>Our Mission</h2>
+                <p>Our mission is to cultivate excellence in technical knowledge, operational proficiency, and safety practices through innovative curricula, advanced facilities and strategic partnerships with leading companies and academic institutions. We aim to develop a highly skilled and competent workforce for the oil and gas industry in Saudi Arabia and the region.​</p>
+              </div>
+              <div class="mv-image">
+                <img src="images/boss.png" alt="" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+          
+          
+          
+            <div class="mv-slide" id="values-slide">
+              <div class="mv-slide-content">
+                <div class="mv-text">
+                  <div class="mv-label">Overview - 2025 Statistics</div>
+                  <h2>Engagement & Impact at a Glance</h2>
+                  <!-- Dashed bullet-style stats list; edit the items below as needed -->
+                   
+                  <ul class="values-stats">
+                    <li>Courses offered : 107 (HSE/Soft Skills/Technical)</li>
+                    <li>Training Sessions: 1059</li>
+                    <li>Attendance: 93%</li>
+                    <li>Course credits: 97.9% of Attendance.</li>
+                    <li>Failure Rate: 2.1% of Attendance.</li>
+                  </ul>
+
+                </div>
+                <div class="mv-image">
+                  <img src="images/Engagement.svg" alt="" aria-hidden="true">
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <button class="mv-nav prev" aria-label="Previous slide">←</button>
+        <button class="mv-nav next" aria-label="Next slide">→</button>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-hero section-padding" data-parallax="true">
+      <!-- Timeline header: promote the timeline title to be the section header -->
+      <div class="timeline-global mobile-px-1">
+        <h2 class="timeline-title">Arabian Drilling Academy Training Center History</h2>
+      </div>
+
+  <div class="timeline-slides">
+        <div class="timeline-slide active" data-year="1993">
+          <div class="slide-content">
+            <div class="year-content">The Establishment of Arabian Drilling Training Center in Dhahran Base.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="1995">
+          <div class="slide-content">
+            <div class="year-content">Deployment and operation of the CS Portable drilling and well control simulator.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2005">
+          <div class="slide-content">
+            <div class="year-content">Deployment and operation of the CS Ful Size drilling and well control simulator.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2006">
+          <div class="slide-content">
+            <div class="year-content">Well Control- Internation Association of Drilling Contractors(IADC) Well Control Accreditation Program (WellCAP)<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2012">
+          <div class="slide-content">
+            <div class="year-content">Deployment and operation of the CS Cyber Chair drilling and well control simulator.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2013">
+          <div class="slide-content">
+            <div class="year-content">The Health and Safety Institute(HSI) - First Aid and Basic Life Support (BLS)<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2015">
+          <div class="slide-content">
+            <div class="year-content">IADC WellSharp - 1st training provider outside the USA to obtain this accrediation.<br class="responsive-break">IADC DIT Accident Investigation and Drilling Technology.<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2016">
+          <div class="slide-content">
+            <div class="year-content">IADC DIT - H2S Train the Trainer <br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2018">
+          <div class="slide-content">
+            <div class="year-content">Deployment and operation of four main simulators that are used to train and access students. <br class="responsive-break"><a class="learn-more" href="simulation-center.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2019">
+          <div class="slide-content">
+            <div class="year-content">ISO:29993:2017 and ISO:9001:2015 certifications<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2023">
+          <div class="slide-content">
+            <div class="year-content">Acquiring Arabian Drilling Academy Training Center new building.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2024">
+          <div class="slide-content">
+            <div class="year-content">Deployment and operation of the Bomco Full Size Cyber operator simulator.</div>
+          </div>
+        </div>
+
+        <div class="timeline-slide" data-year="2025">
+          <div class="slide-content">
+            <div class="year-content">Registration with The Technical and Vocational Training Corporation.<br class="responsive-break"><br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-years">
+        <div class="year-nav">
+            <div class="year-nav-track">
+            <!-- Years in chronological order, earliest to latest -->
+            <button class="year-btn active" data-year="1993">1993</button>
+            <button class="year-btn" data-year="1995">1995</button>
+            <button class="year-btn" data-year="2005">2005</button>
+            <button class="year-btn" data-year="2006">2006</button>
+            <button class="year-btn" data-year="2012">2012</button>
+            <button class="year-btn" data-year="2013">2013</button>
+            <button class="year-btn" data-year="2015">2015</button>
+            <button class="year-btn" data-year="2016">2016</button>
+            <button class="year-btn" data-year="2018">2018</button>
+            <button class="year-btn" data-year="2019">2019</button>
+            <button class="year-btn" data-year="2023">2023</button>
+            <button class="year-btn" data-year="2024">2024</button>
+            <button class="year-btn" data-year="2025">2025</button>
+          </div>
+        </div>
+        <div class="year-progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Moved caption area for selected years / general timeline note -->
+     
+      <!-- navigation arrows removed - years are centered and horizontally scrollable -->
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/mv-slider.js" defer></script>
+  <script src="js/timeline-slider.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Arabian Drilling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/modern-home.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="contact">
+  <div id="site-loader" class="site-loader" role="status" aria-label="Loading site">
+    <div class="site-loader-inner">
+      <img src="images/logo.svg" alt="Arabian Drilling logo" class="loader-logo-img">
+      <div class="loader-bars" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <section class="modern-hero" style="background-image: url('images/contactus.svg');">
+      <div class="modern-hero-overlay"></div>
+      <div class="modern-hero-content container">
+        <h1 class="modern-hero-title">
+          <span class="hero-line accent">Contact</span>
+        </h1>
+        <p class="modern-hero-subtitle">Get in Touch with Us</p>
+      </div>
+    </section>
+    <section class="content-panel container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h1>Do you have any questions?
+            <br>Write us a message.</h1>
+
+          <form class="form-grid" action="#" method="post" id="contactForm" novalidate>
+            <script>
+              // Prefill subject field from URL parameter
+              document.addEventListener('DOMContentLoaded', function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const subject = urlParams.get('subject');
+                if(subject) {
+                  const subjectInput = document.querySelector('input[name="subject"]');
+                  if(subjectInput) subjectInput.value = subject;
+                }
+              });
+            </script>
+            <div class="form-row two-cols">
+              <input type="text" name="first_name" placeholder="First Name *" required>
+              <input type="text" name="last_name" placeholder="Last Name *" required>
+            </div>
+
+            <div class="form-row two-cols">
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <input type="tel" name="phone" placeholder="Phone Number *" required pattern="[+0-9]+" title="Please enter only numbers and + symbol">
+            </div>
+
+            <div class="form-row">
+              <input type="text" name="subject" placeholder="Subject *" required>
+            </div>
+
+            <div class="form-row">
+              <textarea name="message" placeholder="Message *" rows="10" required></textarea>
+            </div>
+
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit">SUBMIT &nbsp; →</button>
+            </div>
+            
+            <!-- Google Maps Location -->
+            <div class="form-row map-container">
+              <h3 style="margin-bottom: 1rem; color: #033f34; font-weight: 300;">Our Location</h3>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.1245534307623!2d50.14647447621988!3d26.38716337696433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e57a40c8a85b%3A0xfcaafb611ddb2eae!2sArabian%20Drilling%20Learning%20Academy!5e0!3m2!1sen!2ssa!4v1762858926166!5m2!1sen!2ssa" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Arabian Drilling Learning Academy Location">
+              </iframe>
+            </div>
+          </form>
+
+          <!-- Popup overlay and content -->
+          <div class="popup-overlay" id="popupOverlay"></div>
+          <div class="form-popup" id="formPopup">
+            <h3 style="color: var(--ad-navy); margin-bottom: 1rem;">Thank You!</h3>
+            <p style="margin-bottom: 1.5rem;">Your message has been successfully submitted.</p>
+            <button class="btn btn-primary" onclick="closePopup()">Close</button>
+          </div>
+        </div>
+
+        <aside class="contact-panel" aria-label="Contact details">
+          <div class="contact-panel-inner">
+            <img src="images/ADC_logo_white_text.svg" alt="Arabian Drilling" class="contact-logo">
+            <p class="contact-address">P.O.Box 4110,<br>Al-Khobar 31952,<br>Kingdom of Saudi Arabia</p>
+            <div class="sep-line" aria-hidden="true"></div>
+
+            <div class="contact-field">
+              <div class="cf-label">TELEPHONE</div>
+              <div class="cf-value">+966 138 297 363</div>
+            </div>
+
+            <div class="sep-line" aria-hidden="true"></div>
+
+            <div class="contact-field">
+              <div class="cf-label">FAX</div>
+              <div class="cf-value">+966 138 826 588</div>
+            </div>
+
+            <div class="sep-line" aria-hidden="true"></div>
+
+            <div class="contact-field">
+              <div class="cf-label">EMAIL ADDRESS</div>
+              <div class="cf-value"><a href="mailto:Trainingadmin@arabdrill.com">Trainingadmin@arabdrill.com</a></div>
+            </div>
+
+            <div class="sep-line" aria-hidden="true"></div>
+            <div class="follow">FOLLOW US</div>
+            <div class="sep-line" aria-hidden="true"></div>
+            <div class="footer-socials contact-socials">
+              <a class="social-link" href="https://www.linkedin.com/company/arabian-drilling/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="LinkedIn" class="social-icon" width="22" height="22" loading="lazy"></a>
+              <a class="social-link" href="https://x.com/Arabiandrilling" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><img src="images/104501_twitter_bird_icon.png" alt="Twitter" class="social-icon" width="22" height="22" loading="lazy"></a>
+              <a class="social-link" href="https://www.youtube.com/channel/UCch6ayRCP5hML3CCRUZLV8g?reload=9" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><img src="images/2559760_media_social_video_youtube_icon.png" alt="YouTube" class="social-icon" width="22" height="22" loading="lazy"></a>
+              <a class="social-link" href="https://www.instagram.com/arabiandrilling/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="images/1161953_instagram_icon.png" alt="Instagram" class="social-icon" width="22" height="22" loading="lazy"></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet Our Team | Arabian Drilling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="instructors">
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true">
+      <div class="hero-text-container">
+        <div class="hero-contact">Meet Our Team</div>
+        <div class="hero-contact-subtitle">Our Training Experts</div>
+      </div>
+    </section>
+    <section class="content-panel container">
+       <p class="intro-text">This section provides a comprehensive overview of our staff members, including their professional titles, areas of expertise, and key responsibilities. Each profile highlights the individual’s core competencies and contributions to our organization, reflecting the depth of experience and commitment that drive our collective success.</p>
+      <div class="content-panel-inner">
+        <!-- Instructor search -->
+        <div class="course-search">
+          <label for="instructor-search-input" class="course-search-label">Search</label>
+          <input id="instructor-search-input" class="course-search-input" type="search" placeholder="Search staff by name or role..." aria-label="Search staff">
+          <div id="instructor-search-count" class="course-search-count" aria-live="polite"></div>
+        </div>
+        <div id="instructor-no-results" class="no-results" role="status" aria-live="polite">No results found</div>
+        <!-- Training Management Section -->
+        <section class="team-section">
+          <h2>Training Management</h2>
+          <div class="instructors-grid cards">
+            <a class="card instructor-card" href="#" data-email="mbashier@arabdrill.com​" data-professional-summary="To be added.​" data-core-competencies='["Bilingual: Arabic & English.​"]' data-name="Position Available" data-title="Senior Drilling Instructor" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Operations Manager">
+              <div class="card-body">
+             <p class="instructor-name">Mohamed El Bashier</p>
+             <h3>Training Manager</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="ALartigue@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Training Director" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Training Director">
+              <div class="card-body">
+                <p class="instructor-name">Anthony Lartigue</p>
+                <h3>Training Consultant</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Ral-dobais@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Operations Manager" data-bio="Position available" data-image="images/person1.svg">
+              <img src="images/person1.jpg" alt="Operations Manager">
+              <div class="card-body">
+                <p class="instructor-name">Raed Al-Dobais</p>
+                <h3>Training Administration Supervisor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="arahim13@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Quality Assurance Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Quality Assurance Manager">
+              <div class="card-body">
+                <p class="instructor-name">Abdelmadjid Rahim</p>
+                <h3>Technical Training SME</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="ESantos36@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Training Supervisor" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Training Supervisor">
+              <div class="card-body">
+                <p class="instructor-name">Edwin Garcia Santos</p>
+                <h3>Office Assistant</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="RAl-mesbah@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Program Development Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Program Development Manager">
+              <div class="card-body">
+                <p class="instructor-name">Reda Al-Mesbah</p>
+                <h3>Training Administration Supervisor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="AMahasnah@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Curriculum Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Curriculum Manager">
+              <div class="card-body">
+                <p class="instructor-name">Aalaa Abdullah Al Mahasnah</p>
+                <h3>Training Leader</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="NBoodi@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Assessment Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Assessment Manager">
+              <div class="card-body">
+                <p class="instructor-name">Nora Boodi</p>
+                <h3>Communication Generalist</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="AALMANSOUR@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Training Standards Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Training Standards Manager">
+              <div class="card-body">
+                <p class="instructor-name">Abeer Abdalrahman A Almansour</p>
+                <h3>Receptionist</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="wahmed2@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Training Delivery","Curriculum Development","HSE"]' data-name="Position Available" data-title="Quality Control Manager" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Quality Control Manager">
+              <div class="card-body">
+                <p class="instructor-name">Waleed Ahmed</p>
+                <h3>Website and IT Systems Generalist</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Training Administration Section -->
+         
+        <section class="team-section">
+          <h2>Training Administration</h2>
+          <div class="instructors-grid cards">
+            
+            <a class="card instructor-card" href="#" data-email="M.Khurram@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Administration","Student Services","Scheduling"]' data-name="Position Available" data-title="Senior Administrator" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Senior Administrator">
+              <div class="card-body">
+                <p class="instructor-name">Muhammad Khurram</p>
+                <h3>Training Specialist</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="AAl-majhad1@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Enrollment","Records","Customer Service"]' data-name="Position Available" data-title="Enrollment Coordinator" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Enrollment Coordinator">
+              <div class="card-body">
+                <p class="instructor-name">Ahmed Abdula Essa Almajhad</p>
+                <h3>Training Generalist</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="HAl-yousef@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Coordination","Logistics","Compliance"]' data-name="Position Available" data-title="Training Coordinator" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Training Coordinator">
+              <div class="card-body">
+                <p class="instructor-name">Hashmiah Sharaf Al-Yousef</p>
+                <h3>Training Specialist</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="AAlqadheeb@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Documentation","Quality Control","Records Management"]' data-name="Position Available" data-title="Documentation Specialist" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Documentation Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Ali Abdula Alqadheeb</p>
+                <h3>Training Generalist</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Technical Instructors Section -->
+        <section class="team-section">
+          <h2>Technical Instructors</h2>
+          <div class="instructors-grid cards">
+            <a class="card instructor-card" href="#" data-email="Aal-morawed@arabdrill.com​" data-professional-summary="A certified and experienced drilling instructor with over 20 years of experience in drilling operations at Arabian Drilling. IADC-approved instructor for well control and DIT, specializing in technical training and adult learning techniques. Proven ability to deliver engaging and effective training programs aligned with ADATC standards.​ ​" data-core-competencies='["IADC certified well control and DIT instructor.​","Situational awareness Instructor.​","Classroom and simulator training.​","LMS & e-Learning Tools.​","Assessment & Evaluation.​","Bilingual: Arabic & English.​"]' data-name="Position Available" data-title="Senior Drilling Instructor" data-bio="Position available" data-image="images/alialmurawedh.jpg">
+              <img src="images/alialmurawedh.jpg" alt="Senior Drilling Instructor">
+              <div class="card-body">
+             <p class="instructor-name">Ali Jawad Ali Al-Morawed</p>
+             <h3>Technical Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="PKilchrist@arabdrill.com​" data-professional-summary="​ Well Control Advisory, Learning & Development. Effectively communicate objectives with team to develop learning strategies, assess competency gaps, and manage company expectations." data-core-competencies='["IADC Certified Instructor (All levels)​","​ Instructional Design (American Management Association)","Classroom & Simulator Training​","Human Factors Well Control​","Competency Assessor​"]' data-name="Position Available" data-title="Well Control Specialist" data-bio="Position available" data-image="images/paul.jpg">
+              <img src="images/paul.jpg" alt="Well Control Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Paul Junius Kilchrist II</p>
+                <h3>Technical Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="AMuthukumar@arabdrill.com​" data-professional-summary="A certified and experienced Technical Instructor developing and delivering IWCF, IADC Well Control and DIT, specializing in technical training and adult learning techniques. Proven ability to deliver engaging and effective training programs aligned with ADATC standards. Over 18 years of experience in offshore drilling field." data-core-competencies='["Handle IADC and IWCF well control","Proficiency in using state-of-the-art simulators..","Proficiency in using state-of-the-art simulators.","Assessment & Evaluation","Bilingual: Hindi & English​"]' data-name="Position Available" data-title="Simulation Instructor" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Simulation Instructor">
+              <div class="card-body">
+                <p class="instructor-name">Arvind Muthukumar</p>
+                <h3>Technical Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="ABadr@arabdrill.com​" data-professional-summary="​Certified and experienced drilling instructor with a strong background in drilling contractor companies. IADC approved instructor for well control and DIT. Technical training, and adult learning methodologies. Proven ability to deliver engaging, effective training programs aligned with ADATC standards. ​" data-core-competencies='["IADC certified well control and DIT instructor.​","Situational awareness Instructor.​","Classroom and simulator training.​","LMS & e-Learning Tools.​","Assessment & Evaluation.​","Bilingual: Arabic & English.​"]' data-name="Position Available" data-title="Equipment Specialist" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Equipment Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Ahmed Osman Ahmed Badr</p>
+                <h3>Well Control Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="MBaig@arabdrill.com" data-professional-summary="Certified and experienced technical Mechanical Training Instructor with a strong background in heavy equipment maintenance, oilfield equipment maintenance, and technical training. Proven ability to deliver engaging, effective training programs aligned with ADATC standards and safety protocols.​ ​" data-core-competencies='["Diesel Engine​","Equipment Hydraulics​","Transmissions and Gear Trains​"]' data-name="Position Available" data-title="Technical Training Specialist" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Technical Training Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Mobeen Baig, Mirza</p>
+                <h3>Technical Training Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="ahtisham.khalid@arabdrill.com" data-professional-summary="Professional summary will be added." data-core-competencies='["Operations","Field Training","Safety"]' data-name="Position Available" data-title="Operations Instructor" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Operations Instructor">
+              <div class="card-body">
+                <p class="instructor-name">Ahtisham Khalid</p>
+                <h3>Technical Instructor</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- HSE and Soft Skills Section -->
+        <section class="team-section">
+          <h2>HSE and Soft Skills Instructors</h2>
+          <div class="instructors-grid cards">
+            <a class="card instructor-card" href="#" data-email="Mtelawi@arabdrill.com​" data-professional-summary="​​Certified and experienced HSE Training Instructor with a strong background in Drilling, HSE training, and adult learning methodologies. Proven ability to deliver engaging, effective training programs aligned with ADATC standards and safety protocols." data-core-competencies='["HSE Training","Coaching and supporting Rigs","LMS & e-Learning Tools","Assessment & Evaluation​","Bilingual: Arabic & English"]' data-name="Position Available" data-title="HSE Lead Instructor" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="HSE Lead Instructor">
+              <div class="card-body">
+                <p class="instructor-name">Mahmoud Kanjo Telawi</p>
+                <h3>HSE Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Hal-saif@arabdrill.com" data-professional-summary="Certified and experienced HSE / Training Instructor with a strong background in aviation, technical training, and adult learning methodologies. Proven ability to deliver engaging, effective training programs aligned with ADATC standards and safety protocols. ​" data-core-competencies='["AD- Aramco safety & Regulations","Develop and Design New courses ","Classroom & Simulator Training","LMS & e-Learning Tools","Assessment & Evaluation","Bilingual: Arabic & English"]' data-name="Position Available" data-title="Safety Training Specialist" data-bio="Position available" data-image="images/hussain.jpg">
+              <img src="images/hussain.jpg" alt="Safety Training Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Hussain Mahmood Mhammed Taqi Aalsaif</p>
+                <h3>HSE Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Hcendana@arabdrill.com​" data-professional-summary="Experienced HSE Training Instructor with a robust background in onshore rig HSE, Taproot Incident investigation training, and ISO 9001/ ISO 29993 standards. Skilled in adult learning methodologies, I have a proven ability to deliver engaging and effective training programs that align with ADATC standards and safety protocols.​ ​" data-core-competencies='["Onshore Rig HSE","Instructional Design (ISO 9001/ ISO 29993)","Classroom & Online Training","LMS & e-Learning Tools ","Assessment & Evaluation","Bilingual: English & Filipino"]' data-name="Position Available" data-title="Environmental Specialist" data-bio="Position available" data-image="images/heginio.jpg">
+              <img src="images/heginio.jpg" alt="Environmental Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Heginio Urbano Cendana</p>
+                <h3>HSE Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Yalsalman@arabdrill.com​" data-professional-summary="​ Certified and experienced HSE Training Instructor and adult learning methodologies. Proven ability to deliver engaging, effective training programs aligned with ADATC standards and safety protocols. Worked in various Positions on the Rig and in the office." data-core-competencies='["Rig Safety & Regulations","NEBOSH – IGC​","Diploma in Off-shore safety.​","Bilingual: Arabic & English"]' data-name="Position Available" data-title="Leadership Development Trainer" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Leadership Development Trainer">
+              <div class="card-body">
+                <p class="instructor-name">Yaseen Alsalman</p>
+                <h3>HSE Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Agad58@arabdrill.com​" data-professional-summary="Experienced facilitator, with proven skills to conduct lectures and whole-day trainings to individuals and corporate including managerial level. Proven ability to work with a fellow facilitator to deliver training workshops as a team. Developing course material and setting agendas with the ability to customize according to client needs." data-core-competencies='[" Soft Skills Training","Onsite Coaching","Life Coaching","LMS & e-Learning Tools​.","Assessment & Evaluation​","Bilingual: Arabic & English​."]' data-name="Position Available" data-title="Communication Skills Instructor" data-bio="Position available" data-image="images/gad.jpg">
+              <img src="images/gad.jpg" alt="Communication Skills Instructor">
+              <div class="card-body">
+                <p class="instructor-name">Ahmed Fahmy Mahmoud Ahmed Gad</p>
+                <h3>Soft Skill Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="MYmohamed@arabdrill.com​" data-professional-summary="Certified and experienced Offshore Crane Operator and Marine Leader with over 18 years of hands-on expertise in offshore lifting, marine stability, and emergency response operations. Proven record in leading deck and marine teams across multiple international rigs, while ensuring strict compliance with safety and operational standards." data-core-competencies='[" Lifting Operations Supervision & Instruction.","Crane Operations","Rigging & Slinging","Simulator-Based Technical Training","Marine Stability & Ballast Control","Compliance with LOLER & API Standards","Crew Coaching & Competence Assessment","Bilingual: Arabic & English"]' data-name="Position Available" data-title="Team Building Specialist" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Team Building Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Mohamed Yousef Abdelaal Hussein Mohamed</p>
+                <h3>Rig Familiarization Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Ramy.ahmed@arabdrill.com​" data-professional-summary="A certified and experienced HSE Training Instructor with a strong background in the drilling industry. Proven ability to deliver engaging, effective training programs aligned with ADATC standards and safety protocols." data-core-competencies='["Drilling Safety & Classroom & practical Training","LMS & e-Learning Tools","Assessment & Evaluation,"Bilingual: Arabic & English"]' data-name="Position Available" data-title="Emergency Response Trainer" data-bio="Position available" data-image="images/ramy.jpg">
+              <img src="images/ramy.jpg" alt="Emergency Response Trainer">
+              <div class="card-body">
+                <p class="instructor-name">Ramy Ahmed Abdelrahman Kilana</p>
+                <h3>Training Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Hal-ahmed@arabdrill.com​" data-professional-summary="Defensive Driving Instructor with over 10 years of hands-on experience in training drivers of light and heavy vehicles, Strong skills in designing and delivering both theoretical and practical training programs with a particular focus on defensive driving principles and road safety. Worked in high-demand operational environments such as Arabian Drilling, Played a key role in improving driver performance and significantly reducing accident rates. ​" data-core-competencies='["Conducting interviews for new drivers and evaluating driver performance.","Annual training is provided to more than 500 drivers.​","Ability to design and deliver both theoretical and practical training programs.​","Developing effective training content tailored for various driver categories (light, heavy vehicles) in both desert and urban environments.​.","Capability to identify weaknesses and provide constructive feedback to improve driver performance.​","Adding and registering training sessions and courses into the LMS & MIX Telematics​.","Bilingual: Arabic & English."]' data-name="Position Available" data-title="Quality Management Instructor" data-bio="Position available" data-image="images/hassan.jpg">
+              <img src="images/hassan.jpg" alt="Quality Management Instructor">
+              <div class="card-body">
+                <p class="instructor-name">Hassan Abdullah Al-Ahmed</p>
+                <h3>Driving Training Instructor</h3>
+              </div>
+            </a>
+            <a class="card instructor-card" href="#" data-email="Aal-ghanem@arabdrill.com​" data-professional-summary="A highly experienced driving instructor with over 25 years in training drivers and operating a wide range of light and heavy vehicles. Skilled in leading teams, managing logistical task distribution, and ensuring high-efficiency operations in line with professional safety standards. Demonstrates strong expertise in transportation systems and vehicle operations. ​" data-core-competencies='["Supervision of Driver Selection & Interview Processes​.","Oversight of Driver Training & Performance Evaluation.","Operation of All Types of Heavy Trucks and Vehicles​.","Technical Training Using Driving Simulators​.","Driver Competency Assessment & Skill","Language: Arabic."]' data-name="Position Available" data-title="Risk Assessment Specialist" data-bio="Position available" data-image="images/person1.jpg">
+              <img src="images/person1.jpg" alt="Risk Assessment Specialist">
+              <div class="card-body">
+                <p class="instructor-name">Adnan Mohd Salih Al-Ghanem</p>
+                <h3>Driving Training Instructor</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <!-- Instructor modal: opens in-place when clicking an instructor card -->
+  <div id="instructor-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-action="close"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="instructor-modal-title">
+      <button class="modal-close" data-action="close" aria-label="Close">×</button>
+  <div id="instructor-modal-media"></div>
+      <div class="desc-card">
+        <h3 id="instructor-modal-title"></h3>
+  <p id="instructor-modal-titleline"></p>
+        
+        <div class="modal-content-wrapper">
+        <!-- Professional Summary Section -->
+        <div class="modal-body">
+      <h4 class="modal-heading">Professional Summary</h4>
+            <div id="instructor-modal-summary"></div>
+        </div>
+        
+        <!-- Core Competencies Section -->
+    <div class="modal-body modal-body--with-border">
+      <h4 class="modal-heading">Core Competencies</h4>
+            <div id="instructor-modal-competencies"></div>
+        </div>
+        
+        <!-- Contact Section -->
+    <div class="modal-body modal-body--with-border">
+      <h4 class="modal-heading">Contact</h4>
+            <div id="instructor-modal-contact"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/instructors.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

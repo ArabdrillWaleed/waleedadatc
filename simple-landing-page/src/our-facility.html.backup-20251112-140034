@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Facility | Arabian Drilling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/facility-mobile-fix.css">
+  <link rel="stylesheet" href="css/feature-panels.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="our-facility">
+  <!-- loader preserved -->
+  <div id="site-loader" class="site-loader" role="status" aria-label="Loading site">
+    <div class="site-loader-inner">
+      <img src="images/logo.svg" alt="Arabian Drilling logo" class="loader-logo-img">
+      <div class="loader-bars" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true">
+      <div class="hero-text-container">
+        <div class="hero-contact">Amenities & Learning Solutions</div>
+        <div class="hero-contact-subtitle">World-Class Training Center</div>
+      </div>
+    </section>
+
+    <!-- Key Features & Amenities section -->
+    <section class="bleed-section">
+      <div class="bleed-inner">
+        <div class="section-header feature-center">
+          <p class="intro-text">Discover our world-class training environment equipped with everything needed for successful learning and skill development.</p>
+        </div>
+
+        <div class="feature-panels-grid">
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Modern Classrooms" data-amenity-title="Learning Spaces" data-amenity-description="State-of-the-art learning spaces equipped with the latest audiovisual technology and comfortable seating for optimal learning experiences." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Modern Classrooms" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Modern Classrooms</h3>
+                <p class="panel-subtitle">Learning Spaces</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Simulation Labs" data-amenity-title="Hands-on Simulators" data-amenity-description="Advanced drilling simulators providing hands-on experience in a safe, controlled environment for practical skills development and certification." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Simulation Labs" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Simulation Labs</h3>
+                <p class="panel-subtitle">Hands-on Simulators</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Technical Workshop" data-amenity-title="Practical Training" data-amenity-description="Fully equipped workshop areas for practical training on industry-standard equipment and tools." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Technical Workshop" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Technical Workshop</h3>
+                <p class="panel-subtitle">Practical Training</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Learning Resources" data-amenity-title="Digital Library" data-amenity-description="Comprehensive digital library and learning materials accessible to all students during their training." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Learning Resources" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Learning Resources</h3>
+                <p class="panel-subtitle">Digital Library</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Conference Center" data-amenity-title="Events & Seminars" data-amenity-description="Multi-purpose conference facilities for seminars, workshops, and industry events with full AV capabilities." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Conference Center" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Conference Center</h3>
+                <p class="panel-subtitle">Events &amp; Seminars</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="card feature-panel amenity-card" href="#" data-amenity-name="Student Amenities" data-amenity-title="Support & Comfort" data-amenity-description="Modern break rooms, prayer facilities, and comfortable study areas to support learning and well-being during training." data-amenity-image="images/Simulator.svg">
+            <div class="panel-preview">
+              <img src="images/Simulator.svg" alt="Student Amenities" loading="lazy">
+              <div class="panel-overlay">
+                <h3 class="panel-title">Student Amenities</h3>
+                <p class="panel-subtitle">Support &amp; Comfort</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Solutions Section -->
+    <section style="background: #003c34; padding: 3rem 0; width: 100%; margin: 0;">
+      <div class="container">
+        <div class="section-header feature-center">
+          <h2 class="values-headline" style="color: #f6630c;">Learning Solutions</h2>
+          <p class="intro-text" style="color: rgba(255,255,255,0.9);">Explore our comprehensive training programs designed to enhance skills and ensure industry compliance across all operational areas.</p>
+        </div>
+
+      <!-- Course Category Cards -->
+      <div class="course-overview-grid">
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Drilling Operations</h3>
+            <span class="course-count">15+ Courses</span>
+          </div>
+          <p class="overview-description">Comprehensive training in drilling techniques, equipment operation, and safety procedures for both offshore and onshore operations.</p>
+          <ul class="overview-highlights">
+            <li>Rig Operations</li>
+            <li>Well Control</li>
+            <li>Drilling Systems</li>
+          </ul>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Health, Safety & Environment</h3>
+            <span class="course-count">20+ Courses</span>
+          </div>
+          <p class="overview-description">Industry-standard HSE training programs ensuring compliance with international safety regulations and best practices.</p>
+          <ul class="overview-highlights">
+            <li>IWCF Certification</li>
+            <li>Emergency Response</li>
+            <li>Risk Management</li>
+          </ul>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Technical Skills</h3>
+            <span class="course-count">12+ Courses</span>
+          </div>
+          <p class="overview-description">Specialized technical training covering advanced equipment, systems, and modern drilling technologies.</p>
+          <ul class="overview-highlights">
+            <li>Equipment Maintenance</li>
+            <li>System Operations</li>
+            <li>Technical Analysis</li>
+          </ul>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Leadership & Management</h3>
+            <span class="course-count">8+ Courses</span>
+          </div>
+          <p class="overview-description">Develop essential leadership and management skills for supervisory and operational management roles.</p>
+          <ul class="overview-highlights">
+            <li>Team Leadership</li>
+            <li>Operations Management</li>
+            <li>Decision Making</li>
+          </ul>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Simulation Training</h3>
+            <span class="course-count">10+ Programs</span>
+          </div>
+          <p class="overview-description">State-of-the-art simulation-based training using advanced equipment for realistic, hands-on experience.</p>
+          <ul class="overview-highlights">
+            <li>Virtual Drilling</li>
+            <li>Emergency Scenarios</li>
+            <li>Equipment Simulators</li>
+          </ul>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-card-header">
+            <h3>Certification Programs</h3>
+            <span class="course-count">25+ Certifications</span>
+          </div>
+          <p class="overview-description">Industry-recognized certification programs meeting international standards and regulatory requirements.</p>
+          <ul class="overview-highlights">
+            <li>IWCF/IADC Standards</li>
+            <li>Professional Credentials</li>
+            <li>Competency Assessment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-panels-cta">
+        <a class="btn btn-secondary" href="training-overview.html">View Details</a>
+        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <!-- Footer component placeholder -->
+  <!-- Amenities Modal -->
+  <div id="amenities-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-action="close"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="amenities-modal-title">
+      <button class="modal-close" data-action="close" aria-label="Close">×</button>
+      <div id="amenities-modal-image"></div>
+      <div class="desc-card">
+        <h3 id="amenities-modal-title"></h3>
+
+        <div class="modal-content-wrapper">
+          <div class="modal-body">
+            <p id="amenities-modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/mv-slider.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+  <script>
+    // Re-initialize sticky notes reveal on page load
+    window.addEventListener('load', function() {
+      // Small delay to ensure images are loaded
+      setTimeout(function() {
+        const notes = document.querySelectorAll('.sticky-note');
+        notes.forEach(note => {
+          if (note.getBoundingClientRect().top < window.innerHeight) {
+            note.classList.add('visible');
+          }
+        });
+        
+        // Re-initialize intersection observer for notes not in initial viewport
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1 });
+
+          notes.forEach(note => {
+            if (!note.classList.contains('visible')) {
+              observer.observe(note);
+            }
+          });
+        }
+      }, 100);
+    });
+  </script>
+  <script>
+    // Amenities modal handlers
+    (function(){
+      const modal = document.getElementById('amenities-modal');
+      const openCards = document.querySelectorAll('.amenity-card');
+      openCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.getElementById('amenities-modal-title').textContent = card.dataset.amenityName || '';
+          document.getElementById('amenities-modal-description').textContent = card.dataset.amenityDescription || '';
+          
+          // Set modal image
+          const modalImage = document.getElementById('amenities-modal-image');
+          const imageSrc = card.dataset.amenityImage || '';
+          if (imageSrc) {
+            modalImage.style.backgroundImage = `url('${imageSrc}')`;
+            modalImage.style.display = 'block';
+          } else {
+            modalImage.style.display = 'none';
+          }
+          
+          // Show modal with animation
+          modal.style.display = 'flex';
+          setTimeout(() => {
+            modal.setAttribute('aria-hidden','false');
+          }, 10);
+          document.body.classList.add('modal-open');
+        });
+      });
+
+      // close handlers (backdrop + close button)
+      document.querySelectorAll('#amenities-modal [data-action="close"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          modal.setAttribute('aria-hidden','true');
+          setTimeout(() => {
+            modal.style.display = 'none';
+          }, 400);
+          document.body.classList.remove('modal-open');
+        });
+      });
+
+      // escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          modal.setAttribute('aria-hidden','true');
+          document.body.classList.remove('modal-open');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

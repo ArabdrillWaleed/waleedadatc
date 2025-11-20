@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Training Overview | Arabian Drilling</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/modern-home.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Page-specific CSS moved into css/styles.css -->
+</head>
+<body class="training-overview">
+  <!-- loader preserved -->
+  <div id="site-loader" class="site-loader" role="status" aria-label="Loading site">
+    <div class="site-loader-inner">
+      <img src="images/logo.svg" alt="Arabian Drilling logo" class="loader-logo-img">
+      <div class="loader-bars" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+    <!-- Modern hero section -->
+  <section class="modern-hero" aria-label="Training Overview" style="background-image: url('images/facility.svg');">
+      <div class="modern-hero-overlay"></div>
+      <div class="modern-hero-content container">
+        <h1 class="modern-hero-title">
+          <span class="hero-line accent">Training Overview</span>
+        </h1>
+        <p class="modern-hero-subtitle">Professional Development Programs</p>
+      </div>
+    </section>
+
+    <!-- Introductory portfolio panel removed per request -->
+
+    <!-- Quick course overview: modern, table-like summary -->
+    <section class="redesigned-section">
+      <div class="container">
+        <p class="intro-text">Fast summary of key courses with duration and accreditation for quick reference.</p>
+
+        <!-- Accreditation filter buttons for overview -->
+        <div id="overview-accreditation-filters" class="accreditation-filters accreditation-filters--lg" aria-label="Filter courses by accreditation" role="group"></div>
+
+  <div class="data-table-wrapper">
+          <table class="data-table" id="course-overview-table">
+            <caption class="visually-hidden">Summary of available courses with duration and accreditation</caption>
+            <thead>
+              <tr>
+                <th scope="col" data-sort="title">Course</th>
+                <th scope="col" data-sort="duration">Duration</th>
+                <th scope="col" data-sort="accreditation">Accreditation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- populated by JS from courses.html -->
+            </tbody>
+          </table>
+        </div>
+
+  <div class="feature-panels-cta">
+          <a class="btn btn-primary" href="courses.html">View Full Portfolio</a>
+          <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/course-overview.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simulators | Arabian Drilling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/simulation-center.css">
+  
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144.png">
+</head>
+<body class="facility simulation">
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true" style="background-image: url('images/Simulator.svg'); background-size: 100% 100%; background-position: center;">
+      <div class="hero-text-container">
+        <div class="hero-contact">Simulators</div>
+        <div class="hero-contact-subtitle">Advanced Training Technology</div>
+      </div>
+    </section>
+
+    <section class="content-panel container">
+      
+      <p class="section-description intro-text">Experience real-world drilling scenarios with our state-of-the-art simulators. Our facility features advanced drilling simulators that provide hands-on experience in a safe, controlled environment. Each simulator is designed to replicate real drilling conditions and scenarios, allowing trainees to develop essential skills and confidence.</p>
+    </section>
+
+    <section class="simulator-section">
+      <div class="simulator-container">
+        <div class="simulator-row">
+            <div class="simulator-content">
+              <h2>DS 600 Amphion/ HH Cyber Chair Drilling Simulator</h2>
+              <div class="simulator-meta">
+                <div><strong>Simulator type:</strong> Full-Scale Drilling Simulator</div>
+                <div><strong>Operating system:</strong> Amphion / HH</div>
+              </div>
+              <p class="simulator-summary">A high-end training system that replicates modern cyber chair rig controls (Amphion and HH) for realistic drilling and well control practice.</p>
+              <ul class="simulator-features">
+                <li>Replicates Amphion and HH systems for realistic rig operation.</li>
+                <li>Includes top drive, drawworks, BOP, choke/kill systems.</li>
+                <li>Normal drilling, tripping, and emergency response drills.</li>
+                <li>Competency Assessment.</li>
+              </ul>
+            </div>
+          <div class="simulator-image">
+            <img src="images/ds600.svg" alt="ds600" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row reverse">
+          <div class="simulator-content">
+            <h2>DS 5000 Hand Brake Drilling Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Simulator type:</strong> Full Size</div>
+              <div><strong>Operating system:</strong> Hand Brake</div>
+            </div>
+            <p class="simulator-summary">A high-fidelity drilling and well control simulator featuring a manual handbrake for realistic rig floor training.</p>
+            <ul class="simulator-features">
+              <li>Manual brake system replicates traditional rig operations.</li>
+              <li>Surface and Downhole Problems.</li>
+              <li>Stuck Pipe Mechanisms and Freeing.</li>
+              <li>Competency Assessment.</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/DS5000.svg" alt="DS5000" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row">
+          <div class="simulator-content">
+            <h2>Bomco Cyber Chair Operator Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Simulator type:</strong> Full Size</div>
+              <div><strong>Operating system:</strong> Bomco</div>
+            </div>
+            <p class="simulator-summary">A high-end drilling simulation systems used for training operators in realistic rig environments.</p>
+            <ul class="simulator-features">
+              <li>Drilling Operations.</li>
+              <li>Well control procedures.</li>
+              <li>Emergency scenarios.</li>
+              <li>Pipe Handling.</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/bomco.svg" alt="Bomco" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row reverse">
+          <div class="simulator-content">
+            <h2>DS 20 - Well Control Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Simulator type:</strong> Portable</div>
+              <div><strong>Operating system:</strong> Hand Brake</div>
+            </div>
+            <p class="simulator-summary">A compact, portable simulator designed for real-time drilling and well control training.</p>
+            <ul class="simulator-features">
+              <li>Well Control Training: Killing scenarios/incidents. </li>
+              <li>Drilling Operations.</li>
+              <li>Portable setup with two physical consoles.</li>
+              <li>Competency Assessment.</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/ds20.svg" alt="DS20" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

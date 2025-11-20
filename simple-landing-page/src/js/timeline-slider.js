@@ -1,0 +1,224 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Auto-advance setup
+  let autoAdvanceTimer = null;
+  const AUTO_ADVANCE_INTERVAL = 7000;
+
+  function startAutoAdvance() {
+    if (autoAdvanceTimer) clearInterval(autoAdvanceTimer);
+    autoAdvanceTimer = setInterval(() => {
+      nextSlide();
+    }, AUTO_ADVANCE_INTERVAL);
+  }
+
+  function resetAutoAdvance() {
+    startAutoAdvance();
+  }
+  const slides = document.querySelectorAll('.timeline-slide');
+  const yearBtns = document.querySelectorAll('.year-btn');
+  const yearTrack = document.querySelector('.year-nav-track');
+  const prevBtn = document.querySelector('.timeline-nav .prev');
+  const nextBtn = document.querySelector('.timeline-nav .next');
+  const progressBar = document.querySelector('.progress-bar');
+  let currentIndex = 0;
+  const maxVisibleYears = 5;
+
+  // Enhanced parallax effect setup
+  let ticking = false;
+  const parallaxSpeed = 0.22; // match STRIVE section speed
+  let lastScrollY = window.pageYOffset;
+
+  function updateParallax() {
+    const scrolled = window.pageYOffset;
+    const timelineSection = document.querySelector('.timeline-hero');
+    const timelineRect = timelineSection.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+
+    // Only apply parallax when timeline section is in view
+    if (timelineRect.top < viewportHeight && timelineRect.bottom > 0) {
+      slides.forEach(slide => {
+        if (slide.classList.contains('active')) {
+          const rect = slide.getBoundingClientRect();
+          const slideTop = scrolled + rect.top;
+          const viewportMiddle = scrolled + (viewportHeight / 2);
+          const distanceFromMiddle = slideTop - viewportMiddle;
+          const offset = distanceFromMiddle * parallaxSpeed;
+          
+          // Apply parallax transform
+          slide.style.setProperty('--parallax', `${offset}px`);
+        }
+      });
+    }
+
+    lastScrollY = scrolled;
+    ticking = false;
+  }
+
+  function requestParallax() {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }
+
+  // Initialize parallax
+  updateParallax();
+  window.addEventListener('scroll', requestParallax, { passive: true });
+  window.addEventListener('resize', requestParallax, { passive: true });
+
+  function updateYearTrack(index) {
+    const btnWidth = yearBtns[0].offsetWidth;
+    const gap = 32; // 2rem gap between buttons
+    const itemWidth = btnWidth + gap;
+    const containerWidth = yearTrack.parentElement.offsetWidth;
+    
+    // For small screens / touch devices, prefer native scrolling on the
+    // parent container (year-nav) so user swipes and programmatic centering
+    // both behave correctly. On larger screens, use transform on the track.
+    const maxScroll = yearTrack.offsetWidth - containerWidth;
+    if (window.innerWidth <= 1024 || yearTrack.parentElement.scrollWidth > containerWidth) {
+      // Compute scrollLeft so the active button is centered within the container
+      const target = index * itemWidth - (containerWidth - btnWidth) / 2;
+      const scrollLeft = Math.max(0, Math.min(maxScroll, target));
+      // Use smooth scrolling when possible
+      try {
+        yearTrack.parentElement.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+      } catch (e) {
+        // Fallback for older browsers
+        yearTrack.parentElement.scrollLeft = scrollLeft;
+      }
+      // Reset any transform applied to yearTrack so it doesn't conflict with scroll
+      yearTrack.style.transform = 'none';
+      return;
+    }
+
+    // Calculate center position for transform-based centering on desktop
+    const centerOffset = (containerWidth - itemWidth) / 2;
+    // Calculate transform to center the active year
+    let transform = -index * itemWidth + centerOffset;
+    // Limit scrolling at the ends
+    transform = Math.max(-maxScroll, Math.min(0, transform));
+    // Apply the transform
+    yearTrack.style.transform = `translateX(${transform}px)`;
+  }
+
+  function updateSlide(index, smooth = true) {
+    if (index < 0 || index >= slides.length) return;
+
+    // Remove active class from all slides and buttons
+    slides.forEach(slide => slide.classList.remove('active'));
+    yearBtns.forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to current slide and button
+    slides[index].classList.add('active');
+    yearBtns[index].classList.add('active');
+    
+    // Update progress bar
+    progressBar.style.width = `${((index + 1) / slides.length) * 100}%`;
+    
+    // Update year track position
+    if (smooth) {
+      yearTrack.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+    } else {
+      yearTrack.style.transition = 'none';
+    }
+    updateYearTrack(index);
+    
+    currentIndex = index;
+
+    // Reset parallax position for new slide
+    updateParallax();
+
+    // Animate year-content: remove active class from all (handled by .timeline-slide.active in CSS)
+    // Update the subtext caption under the timeline (if present)
+    const subtext = document.querySelector('.timeline-subtext');
+    if (subtext) {
+      // prefer a data-caption on the active year button, then slide's .year-content
+      const activeBtn = yearBtns[index];
+      const btnCaption = activeBtn ? activeBtn.getAttribute('data-caption') : null;
+      if (btnCaption) {
+        subtext.textContent = btnCaption;
+      } else {
+        const slideCaption = slides[index].querySelector('.year-content');
+        if (slideCaption && slideCaption.textContent.trim()) {
+          subtext.textContent = slideCaption.textContent.trim();
+        }
+      }
+    }
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    updateSlide(nextIndex);
+  }
+
+  function prevSlide() {
+    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide(prevIndex);
+  }
+
+  // Event listeners for next/prev buttons (only if arrows exist)
+  if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+  if (nextBtn) nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetAutoAdvance();
+  });
+  if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+  if (prevBtn) prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetAutoAdvance();
+  });
+
+  // Event listeners for year buttons
+  // Clicking any year will jump directly to that year (allow skipping)
+  yearBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      updateSlide(index);
+      resetAutoAdvance();
+    });
+  });
+
+  // Handle keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight') {
+      nextSlide();
+      resetAutoAdvance();
+    } else if (e.key === 'ArrowLeft') {
+      prevSlide();
+      resetAutoAdvance();
+    }
+  });
+
+  // Initialize without transition
+  yearTrack.style.transition = 'none';
+  // Use setProperty with important to override the CSS rule that forces translateX(0)
+  yearTrack.style.setProperty('transform', 'translateX(0)', 'important');
+  
+  // Initialize first slide
+  // Start auto-advance
+  startAutoAdvance();
+  slides.forEach(slide => slide.classList.remove('active'));
+  yearBtns.forEach(btn => btn.classList.remove('active'));
+  
+  slides[0].classList.add('active');
+  yearBtns[0].classList.add('active');
+  
+  // Update progress bar
+  if (progressBar) {
+    progressBar.style.width = `${(1 / slides.length) * 100}%`;
+  }
+  
+  // Force a reflow
+  void yearTrack.offsetWidth;
+  
+  // Add transition back
+  yearTrack.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+
+  // Handle window resize
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      updateYearTrack(currentIndex);
+    }, 100);
+  });
+});

@@ -1,0 +1,302 @@
+/* Mobile fixes for facility page */
+
+/* Center the Learning Solutions panel vertically inside Hero 2 on the facility page.
+   These overrides are page-scoped and use high specificity + !important where needed
+   so they reliably center the overlay content even when global hero rules are large. */
+.our-facility .hero-overlay-values {
+  display: flex !important;
+  align-items: center !important;    /* vertical centering */
+  justify-content: center !important; /* horizontal centering */
+  pointer-events: none !important;    /* keep overlay non-blocking except inner content */
+  inset: 0;                            /* ensure overlay fills hero */
+}
+
+.our-facility .hero-overlay-values .values-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  padding: 0.5rem 1rem !important; /* keep a little breathing room */
+  width: 100% !important;
+  box-sizing: border-box !important;
+  pointer-events: auto !important; /* allow clicks inside the inner area */
+}
+
+/* Modern content panel styling with refined aesthetics and subtle animations.
+   High-specificity rules ensure these styles take precedence. */
+.our-facility .content-panel.content-panel--overlay {
+  transform: translateY(20px) scale(0.98) !important;
+  opacity: 0;
+  margin: 0 auto !important;
+  padding: 1.5rem !important;
+  max-width: 980px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.96) 100%) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  box-shadow: 
+    0 10px 30px -5px rgba(0,0,0,0.2),
+    0 2px 8px -2px rgba(0,0,0,0.12),
+    0 0 0 1px rgba(255,255,255,0.1) !important;
+  border-radius: 12px !important;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  animation: contentPanelReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s !important;
+}
+
+/* Fade in children with stagger */
+.our-facility .content-panel.content-panel--overlay > * {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: contentChildrenReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.our-facility .content-panel.content-panel--overlay .feature-panels-header { animation-delay: 0.4s; }
+.our-facility .content-panel.content-panel--overlay .feature-panels-row { animation-delay: 0.5s; }
+.our-facility .content-panel.content-panel--overlay .feature-panels-cta { animation-delay: 0.6s; }
+
+/* Inner panels get subtle hover lift */
+.our-facility .content-panel.content-panel--overlay .feature-panel {
+  background: rgba(255,255,255,0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 8px !important;
+  box-shadow: 
+    0 4px 20px -4px rgba(0,0,0,0.1),
+    0 2px 6px -2px rgba(0,0,0,0.05) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.our-facility .content-panel.content-panel--overlay .feature-panel:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 
+    0 12px 28px -6px rgba(0,0,0,0.15),
+    0 4px 10px -3px rgba(0,0,0,0.1) !important;
+}
+
+/* Ensure CTA buttons have consistent styling */
+.our-facility .content-panel.content-panel--overlay .feature-panels-cta .btn {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.our-facility .content-panel.content-panel--overlay .feature-panels-cta .btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 16px -4px rgba(246,99,12,0.3) !important;
+}
+
+/* Reveal animations */
+@keyframes contentPanelReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes contentChildrenReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .our-facility .content-panel.content-panel--overlay,
+  .our-facility .content-panel.content-panel--overlay > * {
+    animation: none !important;
+    transform: none !important;
+    transition: opacity 0.3s ease !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Refined mobile styling */
+  .our-facility .hero-overlay-values .values-inner {
+    padding: 1rem !important;
+  }
+  .our-facility .content-panel.content-panel--overlay {
+    padding: 1.25rem !important;
+    width: calc(100% - 2rem) !important;
+    margin: 1rem !important;
+    border-radius: 8px !important;
+  }
+  /* Tighter spacing between panels on mobile */
+  .our-facility .content-panel.content-panel--overlay .feature-panel {
+    margin-bottom: 1rem !important;
+  }
+  /* Full-width buttons on mobile */
+  .our-facility .content-panel.content-panel--overlay .feature-panels-cta .btn {
+    width: 100% !important;
+    padding: 0.85rem !important;
+  }
+}
+
+.our-facility .image-hero.color-2 {
+  /* Desktop / laptop: make the hero substantially taller per request.
+     Using a large min-height (150vh) so the hero area occupies roughly
+     1.5x the viewport on wider screens. Mobile rule below remains 90vh. */
+  min-height: 150vh !important;
+  height: 150vh !important;
+  max-height: 150vh !important;
+}
+
+@media (max-width: 600px) {
+  .our-facility .image-hero.color-2 {
+    /* Larger height on mobile to ensure content fits comfortably */
+    min-height: 120vh !important;
+    height: 120vh !important;
+    max-height: 120vh !important;
+    padding-top: 1rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  /* Ensure any parallax or dynamic height adjustments don't override our height */
+  .our-facility .image-hero.color-2[style] {
+    min-height: 120vh !important;
+    height: 120vh !important;
+    max-height: 120vh !important;
+  }
+
+  .values-inner .section-header {
+     padding: 2rem 1rem 2rem !important;
+  }
+  
+  .feature-panels-header {
+     margin-top: 2rem !important;
+  }
+  
+  .feature-panels-row {
+    margin-top: 1rem;
+  }
+  
+  .feature-panels-inner {
+    padding: 0 1rem;
+  }
+  
+  .feature-panel {
+    margin: 0 0 2rem 0;
+    padding: 1.5rem;
+    min-height: auto;
+    max-width: 100%;
+  }
+  
+  .panel-preview img {
+    height: 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-panels-cta {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .feature-panels-cta .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .sticky-note {
+    width: calc(100% - 2rem);
+    margin: 1rem !important;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .sticky-notes-container {
+    padding: 2rem 0;
+  }
+  
+  .section-header {
+    padding: 2rem 1rem !important;
+  }
+}
+
+/* Mobile nav tweaks: make the "Our Facility" dropdown look and feel like
+   the other nav items on small screens, but keep it expandable/clickable. */
+@media (max-width: 720px) {
+  /* Ensure the dropdown trigger matches other link padding/weight */
+  .site-nav .nav-list .nav-item.has-dropdown > .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* keep chevron to the far right */
+    /* Align with global mobile nav spacing and typography */
+    padding: 0.4rem 1.2rem; /* same as .site-nav a */
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal; /* allow normal wrapping like other items */
+    pointer-events: auto; /* ensure clickable */
+    line-height: 1.2;
+  }
+
+  /* Move the chevron a bit inward so it doesn't push the line-height */
+  .site-nav .nav-list .nav-item.has-dropdown > .nav-link::after {
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  /* Keep the collapsed dropdown from reserving vertical space */
+  .site-nav .nav-list .nav-item.has-dropdown .dropdown-menu {
+    margin: 0;
+    padding-left: 0.5rem;
+    background: transparent;
+  }
+
+  /* remove list bullets and reset margins/padding so submenu items appear
+     as plain stacked links (no list markers) on mobile */
+  .site-nav .nav-list .nav-item.has-dropdown .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-nav .nav-list .nav-item.has-dropdown .dropdown-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-nav .nav-list .nav-item.has-dropdown .dropdown-menu a {
+    padding: 0.5rem 0.75rem; /* match other mobile links inside the submenu */
+    display: block;
+    font-weight: 300;
+  }
+
+  /* When expanded, show the submenu inline and matching mobile styles */
+  .site-nav .nav-list .nav-item.has-dropdown.expanded .dropdown-menu {
+    visibility: visible;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Prevent parent item from changing color when expanded or on tap
+     (keep it visually consistent like other items). Use !important since
+     some pages may set stronger rules later. */
+  .site-nav .nav-list .nav-item.has-dropdown > .nav-link,
+  .site-nav .nav-list .nav-item.has-dropdown > .nav-link.dropdown-trigger {
+    color: #003c34;
+  }
+
+  .site-nav .nav-list .nav-item.has-dropdown.expanded > .nav-link,
+  .site-nav .nav-list .nav-item.has-dropdown.expanded > .nav-link.dropdown-trigger {
+    color: #003c34 !important;
+  }
+
+  /* Avoid extra bottom gap on the parent item when collapsed */
+  .site-nav .nav-list .nav-item.has-dropdown { margin-bottom: 0; }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simulation Center | Arabian Drilling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/simulation-center.css">
+  
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144.png">
+</head>
+<body class="facility simulation">
+  <header class="site-header" role="banner">
+    <div class="container header-top">
+      <div class="header-utility">
+        <div class="util-left"></div>
+        <div class="util-right"></div>
+      </div>
+    </div>
+
+    <div class="container header-inner header-main-row">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="logo-img">
+        </a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="our-facility.html">OUR FACILITY</a>
+            <ul class="dropdown-menu">
+
+              <li><a href="simulation-center.html" class="active">Simulation Center</a></li>
+              <li><a href="accreditations.html">Accreditations</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="timeline.html">TIMELINE</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">MEET OUR TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true" style="background-image: url('images/Simulator.svg'); background-size: 100% 100%; background-position: center;">
+      <div class="hero-text-container">
+        <div class="hero-contact">Simulation Center</div>
+        <div class="hero-contact-subtitle">Advanced Training Technology</div>
+      </div>
+    </section>
+
+    <section class="content-panel container">
+      <h1>Simulation Center</h1>
+      <p>Experience real-world drilling scenarios in our state-of-the-art simulation center. Our facility features advanced drilling simulators that provide hands-on experience in a safe, controlled environment. Each simulator is designed to replicate real drilling conditions and scenarios, allowing trainees to develop essential skills and confidence.</p>
+    </section>
+
+    <section class="simulator-section">
+      <div class="simulator-container">
+        <div class="simulator-row">
+            <div class="simulator-content">
+              <h2>NOV Amphion™ Simulator</h2>
+              <div class="simulator-meta">
+                <div><strong>Manufacturer:</strong> National Oilwell Varco (NOV)</div>
+                <div><strong>Simulator type:</strong> Full-scale drilling control simulator</div>
+                <div><strong>Operating system:</strong> Windows 10 (x64)</div>
+              </div>
+              <p class="simulator-summary">A high-end training system that replicates modern cyber chair rig controls (Amphion and HH) for realistic drilling and well control practice.</p>
+              <ul class="simulator-features">
+                <li>Full-scale drilling control interface</li>
+                <li>Real-time drilling parameter monitoring</li>
+                <li>Comprehensive scenario library</li>
+                <li>Performance tracking and assessment</li>
+              </ul>
+            </div>
+          <div class="simulator-image">
+            <img src="images/ds600.svg" alt="ds600" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row reverse">
+          <div class="simulator-content">
+            <h2>HONGHUA™ Control System Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Manufacturer:</strong> Honghua</div>
+              <div><strong>Simulator type:</strong> Integrated control system simulator</div>
+              <div><strong>Operating system:</strong> Windows 10 (x64)</div>
+            </div>
+            <p class="simulator-summary">Train on the HONGHUA™ integrated drilling control system with our high-fidelity simulator. Ideal for operational skills, safety drills and system diagnostics practice.</p>
+            <ul class="simulator-features">
+              <li>Authentic control panel layout</li>
+              <li>Multiple drilling operation modes</li>
+              <li>Emergency scenario training</li>
+              <li>Integrated system diagnostics</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/rig2.jpg" alt="HONGHUA™ Control System Simulator" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row">
+          <div class="simulator-content">
+            <h2>DrillSIM-6000 Well Control Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Manufacturer:</strong> DrillSIM / Simulation vendor</div>
+              <div><strong>Simulator type:</strong> Well control & 3D visualization simulator</div>
+              <div><strong>Operating system:</strong> Windows Server / Windows 10 (varies by node)</div>
+            </div>
+            <p class="simulator-summary">Master well control procedures on our DrillSIM-6000 simulator. The system provides interactive 3D well visualisation and practical exercises to prepare trainees for IWCF and real-world operations.</p>
+            <ul class="simulator-features">
+              <li>Interactive 3D well visualization</li>
+              <li>Pressure control exercises</li>
+              <li>Kick detection and management</li>
+              <li>IWCF certification preparation</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/faq.svg" alt="DrillSIM-6000 Well Control Simulator" loading="lazy">
+          </div>
+        </div>
+
+        <div class="simulator-row reverse">
+          <div class="simulator-content">
+            <h2>Stuck Pipe Simulator</h2>
+            <div class="simulator-meta">
+              <div><strong>Manufacturer:</strong> In-house / vendor-specific</div>
+              <div><strong>Simulator type:</strong> Focused stuck-pipe mechanics simulator</div>
+              <div><strong>Operating system:</strong> Windows 10 (x64)</div>
+            </div>
+            <p class="simulator-summary">Learn to identify, prevent and resolve stuck pipe situations using our specialized simulator. Trainees practice decision-making and corrective actions across a variety of realistic scenarios.</p>
+            <ul class="simulator-features">
+              <li>Real-time pipe mechanics simulation</li>
+              <li>Various stuck pipe scenarios</li>
+              <li>Preventive technique training</li>
+              <li>Problem-solving exercises</li>
+            </ul>
+          </div>
+          <div class="simulator-image">
+            <img src="images/faq1.svg" alt="Stuck Pipe Prevention Simulator" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrap">
+      <div class="footer-col footer-brand">
+        <img src="images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="footer-brand-mark">
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-col footer-contact-compact">
+          <p style="font-weight:700;margin-bottom:.45rem">+966 138 297 363</p>
+          <p style="margin:0 0 .6rem"><a href="mailto:Trainingadmin@arabdrill.com">Trainingadmin@arabdrill.com</a></p>
+          <div style="margin-bottom:.6rem" class="footer-socials">
+            <a class="social-link" href="https://www.linkedin.com/company/arabian-drilling/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin.png" alt="LinkedIn" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://x.com/Arabiandrilling" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <img src="images/104501_twitter_bird_icon.png" alt="Twitter" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCch6ayRCP5hML3CCRUZLV8g?reload=9" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="images/2559760_media_social_video_youtube_icon.png" alt="YouTube" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/arabiandrilling/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="images/1161953_instagram_icon.png" alt="Instagram" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="our-facility.html">Our Facility</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="instructors.html">Meet Our Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom footer-bottom-row">
+      <div class="footer-bottom-left">
+        <nav class="small-links"><a href="disclaimer.html">Disclaimer</a> <span class="sep">/</span> <a href="privacy-policy.html">Privacy Policy</a></nav>
+        <div class="copy">© <span id="year"></span> Arabian Drilling.</div>
+      </div>
+
+      <div class="footer-bottom-right">
+        <img src="images/Saudi_Vision_2030_logo.svg.png" alt="Vision 2030" class="footer-mark footer-2030">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

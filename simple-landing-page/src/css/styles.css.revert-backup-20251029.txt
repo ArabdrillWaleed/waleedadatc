@@ -1,0 +1,27 @@
+--- Backup: snippets from styles.css before revert (timestamp: 2025-10-29) ---
+
+:root original snippet (current values at time of backup):
+  --card-text: #07263A;
+  --card-heading: rgba(2,10,20,0.85);
+  /* global text/heading color requested by user */
+  /* Darker, higher-contrast text system to match reference image */
+  --heading: #07263A; /* strong dark navy for headings */
+  --text: #234548; /* dark slate for body text (slightly lighter than headings) */
+
+--- Override block that will be removed: ---
+/* Override: enforce the requested darker text contrast across the site.
+   We use variable-based colors so future tweaks remain simple. This block
+   targets common elements that previously used lighter rgba values. */
+.site-wide-text-contrast, body, main, p, .content-panel p, .copy, .footer-desc, .small-links a, .footer-contact-compact p {
+  color: var(--text) !important;
+}
+
+/* Headings should remain visually stronger than body text */
+h1, h2, h3, .content-panel h2, .faq-section h2, .card h3 {
+  color: var(--heading) !important;
+}
+
+/* Reduce opacity on less prominent text separately when needed */
+.muted-text { color: rgba(35,53,56,0.8) !important; }
+
+--- End backup ---

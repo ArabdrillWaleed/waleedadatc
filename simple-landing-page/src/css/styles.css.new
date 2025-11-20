@@ -1,0 +1,114 @@
+.feature-panels-inner {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.feature-panel {
+  background: #fff;
+  color: #003c34;
+  border-radius: 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  flex: 1 1 400px;
+  min-width: 0;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+  min-height: 480px; /* Fixed height for consistency */
+  margin: 0;
+  justify-content: flex-start; /* Align content to top */
+}
+
+.panel-preview {
+  flex: 0 0 auto; /* Don't allow preview to grow */
+}
+
+.panel-preview img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 1.1rem;
+  display: block;
+}
+
+.panel-info {
+  flex: 1 0 auto; /* Allow info section to grow but not shrink */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.panel-list {
+  margin: 1rem 0 0.5rem 2rem;
+  padding: 0;
+  color: #264a46;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  list-style-position: outside;
+  flex: 1 0 auto; /* Allow list to grow but not shrink */
+}
+
+.feature-panels-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  width: 100%; /* Full width */
+}
+
+.feature-panels-cta .btn {
+  flex: 1;
+  max-width: 200px;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+}
+
+.btn-secondary {
+  background: var(--ad-gold);
+  color: var(--ad-dark);
+  border: none;
+  padding: 0.45rem 0.85rem;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border-radius: 0;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px 0 rgba(0,60,52,0.07);
+  cursor: pointer;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .feature-panels-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .feature-panel {
+    margin: 0 auto 1.5rem;
+    width: 100%;
+    min-height: auto; /* Allow height to adjust on mobile */
+    padding: 1.25rem 1rem;
+  }
+  
+  .feature-panels-cta {
+    flex-direction: row; /* Keep buttons side by side */
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  
+  .feature-panels-cta .btn {
+    flex: 0 1 auto; /* Don't let buttons grow too wide */
+    min-width: 120px;
+  }
+}

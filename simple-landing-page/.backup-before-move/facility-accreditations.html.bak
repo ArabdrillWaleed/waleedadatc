@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accreditations | Arabian Drilling</title>
+  
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="facility accreditations">
+  <header class="site-header" role="banner">
+    <div class="container header-top">
+      <div class="header-utility">
+        <div class="util-left"></div>
+        <div class="util-right"></div>
+      </div>
+    </div>
+
+    <div class="container header-inner header-main-row">
+      <div class="brand">
+        <a href="../index.html" class="logo">
+          <img src="../images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="logo-img">
+        </a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="../our-facility.html">OUR FACILITY</a>
+            <ul class="dropdown-menu">
+              <li><a href="accreditations.html" class="active">Accreditations</a></li>
+              <li><a href="simulation-center.html">Simulation Center</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+              <li><a href="student-amenities.html">Student Amenities</a></li>
+              <li><a href="location-access.html">Location & Access</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../services.html">SERVICES</a></li>
+          <li class="nav-item"><a class="nav-link" href="../courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="../instructors.html">MEET OUR TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="../faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true">
+      <div class="hero-text-container">
+        <div class="hero-contact">Accreditations</div>
+        <div class="hero-contact-subtitle">Recognized Quality & Standards</div>
+      </div>
+    </section>
+
+    <section class="content-panel container">
+      <h1>Accreditations</h1>
+      <p>Arabian Drilling’s Training Center is proud to be recognized and accredited by leading industry organizations. Our accreditations demonstrate our commitment to delivering high-quality, internationally recognized training programs that meet rigorous standards for safety, technical excellence, and instructional quality.</p>
+      <ul>
+        <li>International Well Control Forum (IWCF) Accredited</li>
+        <li>International Association of Drilling Contractors (IADC) Accredited</li>
+        <li>Saudi Aramco Approved Training Provider</li>
+        <li>General Organization for Technical and Vocational Training (TVTC) Certified</li>
+        <li>ISO 9001:2015 Quality Management System</li>
+      </ul>
+      <p>These accreditations ensure our courses and certifications are recognized by employers and regulatory bodies worldwide, giving our trainees a competitive edge in the energy sector.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrap">
+      <div class="footer-col footer-brand">
+        <img src="../images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="footer-brand-mark">
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-col footer-contact-compact">
+          <p style="font-weight:700;margin-bottom:.45rem">+966 138 297 363</p>
+          <p style="margin:0 0 .6rem"><a href="mailto:Trainingadmin@arabdrill.com">Trainingadmin@arabdrill.com</a></p>
+          <div style="margin-bottom:.6rem" class="footer-socials">
+            <a class="social-link" href="https://www.linkedin.com/company/arabian-drilling/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://x.com/Arabiandrilling" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <img src="../images/104501_twitter_bird_icon.png" alt="Twitter" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCch6ayRCP5hML3CCRUZLV8g?reload=9" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="../images/2559760_media_social_video_youtube_icon.png" alt="YouTube" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/arabiandrilling/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="../images/1161953_instagram_icon.png" alt="Instagram" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="../our-facility.html">Our Facility</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../courses.html">Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="../instructors.html">Meet Our Team</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom footer-bottom-row">
+      <div class="footer-bottom-left">
+        <nav class="small-links"><a href="../disclaimer.html">Disclaimer</a> <span class="sep">/</span> <a href="../privacy-policy.html">Privacy Policy</a></nav>
+        <div class="copy">© <span id="year"></span> Arabian Drilling.</div>
+      </div>
+
+      <div class="footer-bottom-right">
+        <img src="../images/Saudi_Vision_2030_logo.svg.png" alt="Vision 2030" class="footer-mark footer-2030">
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

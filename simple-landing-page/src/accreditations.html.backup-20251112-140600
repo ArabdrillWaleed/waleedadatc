@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accreditations | Arabian Drilling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/accreditations.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144.png">
+</head>
+<body class="facility accreditations">
+  <!-- Header component placeholder -->
+  <div id="site-header-placeholder"></div>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true" style="background-image: url('images/accreditations.svg'); background-size: 100% 100%; background-position: center;">
+      <div class="hero-text-container">
+        <div class="hero-contact">Accreditations</div>
+        <div class="hero-contact-subtitle">Global Recognition</div>
+      </div>
+    </section>
+
+    <section class="content-panel container">
+      <div class="section-header">
+        
+        <p class="section-description intro-text">Certified excellence in training and development, recognized by leading industry organizations worldwide.</p>
+      </div>
+
+      <div class="accreditations-grid">
+        <!-- IADC WellCAP -->
+
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/ISo.jpg" alt="Iso 2015" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">ISO:9001:2015</h3>
+              <p class="accreditation-description">International Standard for Quality Management Systems.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> October 2025</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> October 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/iso2993.jpg" alt="iso-29993:2017" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">ISO:29993:2017</h3>
+              <p class="accreditation-description">Internation Standard specifying requirements for learning services outside of formal education.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> October 2022</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> October 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IADC WellSharp -->
+        
+
+        <!-- IWCF -->
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/tvtc.jpg" alt="vocational training" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">TVTC License</h3>
+              <p class="accreditation-description">Registration with the Technical and vocational Training Corporation</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> March 12, 2025</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> May 31, 2029</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HSI Certification -->
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/WellSharp.svg" alt="WellSharp Certification" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">ADATC WellSharp</h3>
+              <p class="accreditation-description">Well Sharp Accreditation for various Drilling Operation courses.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> June 2015</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> June 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ISO 29993:2017 -->
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/Dit1.png" alt="ISO 29993:2017 Certification" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">IADC DIT</h3>
+              <p class="accreditation-description">IADC DIT certification for H2S Train The Trainer program and others.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> August 2009</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> August 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/Fallprot.png" alt="ISO 9001:2015 Certification" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">IADC DIT</h3>
+              <p class="accreditation-description">IADC DIT certification for Fall Protection Train The Trainer and others.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> August 2009</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> August 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IADC DIT -->
+        <div class="accreditation-card">
+          <div class="accreditation-media">
+            <img src="images/Manualhandling.png" alt="IADC DIT Certification" class="accreditation-image">
+          </div>
+          <div class="accreditation-details">
+            <div class="accreditation-content">
+              <h3 class="accreditation-title">IADC DIT - H2S</h3>
+              <p class="accreditation-description">IADC DIT certification for Manual Handling Train The Trainer and others.</p>
+              <div class="accreditation-dates">
+                <span class="date-item"><strong>Obtained:</strong> August 2009</span>
+                <span class="date-separator">|</span>
+                <span class="date-item"><strong>Expires:</strong> August 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer component placeholder -->
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/include-fragments.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+.team-section {
+  margin-bottom: 3rem;
+}
+
+/* Search input styles */
+.instructors-search-wrapper {
+  position: relative;
+  max-width: 480px;
+  margin: 0 0 2rem 0;
+}
+
+.instructors-search-wrapper input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid rgba(2,10,20,0.1);
+  border-radius: 4px;
+  color: #264a46;
+  background: #ffffff;
+}
+
+.instructors-search-wrapper input::placeholder {
+  color: rgba(38,74,70,0.5);
+}
+
+.instructors-search-wrapper .search-clear {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #264a46;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1.1rem;
+  opacity: 0.6;
+  transition: opacity 0.18s ease;
+}
+
+.instructors-search-wrapper .search-clear:hover {
+  opacity: 1;
+}
+
+.team-section h2 {
+  color: var(--ad-navy);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(2,10,20,0.06);
+}
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.6rem; /* tighter gap for compact layout */
+  margin-top: 0.5rem;
+}
+
+/* Larger viewports: increase column count to make tiles smaller */
+@media (min-width: 1400px) {
+  .instructors-grid { grid-template-columns: repeat(6, 1fr); gap: 0.6rem }
+}
+
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .instructors-grid { grid-template-columns: repeat(4, 1fr); gap: 0.6rem }
+}
+
+@media (max-width: 900px) {
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+  .instructors-grid { grid-template-columns: repeat(2,1fr); gap:1rem }
+}
+
+@media (max-width: 720px) {
+  .team-section {
+    margin-bottom: 2rem;
+  }
+
+  .team-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Compact card overrides: make instructor cards smaller and tighter */
+/* Square card tile styles: make each instructor card a square tile with
+   the image filling the tile and the name/title overlayed at the bottom. */
+.instructors-grid .card,
+.instructors-grid .instructor-card {
+  aspect-ratio: 1 / 1; /* keep square */
+  padding: 0; /* image would fill the tile if present */
+  min-height: 0; /* let aspect-ratio control height */
+  display: block;
+  position: relative;
+  overflow: hidden;
+  /* background removed so pages can use their own image or color */
+}
+
+/* Show instructor image elements and make them fill the tile. The
+   bottom caption (.card-body) sits above the image (z-index:2). */
+.instructors-grid .card img,
+.instructors-grid .instructor-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay the caption at the bottom of the square */
+.instructors-grid .card .card-body,
+.instructors-grid .instructor-card .card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0.75rem 0.8rem; /* Increased padding for two lines */
+  /* stronger overlay to ensure text remains legible over bright images */
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.75) 100%);
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Style for instructor name */
+.instructor-name {
+  font-size: 1rem;
+  margin: 0 0 0.2rem 0;
+  color: #ffffff; /* full white for best contrast */
+  font-weight: 700; /* stronger weight to stand out */
+  line-height: 1.2;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.instructors-grid .card h3,
+.instructors-grid .instructor-card h3 {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #ffffff; /* match name color for equal prominence */
+  font-weight: 400; /* normal weight, still smaller than the name */
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+.instructors-grid .card p,
+.instructors-grid .instructor-card p {
+  font-size: 0.78rem;
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Hover: highlight instructor card text in the brand orange */
+.instructors-grid .instructor-card:hover h3,
+.instructors-grid .instructor-card:focus-within h3,
+.instructors-grid .instructor-card:hover p,
+.instructors-grid .instructor-card:focus-within p,
+.instructors-grid .instructor-card:hover .instructor-name,
+.instructors-grid .instructor-card:focus-within .instructor-name {
+  color: #f6630c;
+  transition: color .18s ease;
+}
+
+/* On hover, make the bottom overlay a bit darker so the orange text stands out */
+.instructors-grid .instructor-card:hover .card-body,
+.instructors-grid .instructor-card:focus-within .card-body {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.75) 100%);
+  transition: background 180ms ease;
+}
+
+@media (max-width: 900px) {
+  .instructors-grid { grid-template-columns: repeat(2,1fr); gap:0.6rem }
+}
+
+@media (max-width: 480px) {
+  .instructors-grid { grid-template-columns: 1fr; gap: 0.5rem }
+}
+
+/* Mobile & Tablet: limit visible instructor cards to the first 3 per section and prevent overflow */
+@media (max-width: 900px) {
+  /* Allow the grid to size naturally to avoid clipping on some devices */
+  .instructors-grid {
+    overflow: visible; /* let cards render fully */
+    position: relative;
+    grid-auto-rows: auto; /* ensure rows size to card content */
+  }
+
+  /* Remove square aspect enforcement on very small screens so cards can
+     size naturally and avoid fractional-pixel clipping. */
+  .instructors-grid .card,
+  .instructors-grid .instructor-card {
+    aspect-ratio: auto;
+  }
+
+  /* Make the image participate in document flow on small screens so the
+     parent card gets a proper height (prevents collapse to 0 height). */
+  .instructors-grid .card img,
+  .instructors-grid .instructor-card img {
+    position: static; /* image contributes to layout */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Hide instructor cards after the third item (visual-only on small screens) */
+  /* Only hide extra cards when NOT searching; while searching JS will
+     mark non-matching cards with inline styles (display:none) so only
+     matching cards are visible. Using body:not(.instructor-search-active)
+     ensures we don't force show non-matches during search. */
+  body:not(.instructor-search-active) .instructors-grid .card:nth-child(n+4),
+  body:not(.instructor-search-active) .instructors-grid .instructor-card:nth-child(n+4) {
+    display: none !important;
+  }
+}
+
+/* removed the previous search-active override so inline JS hiding of
+   non-matches controls visibility during search (more precise). */
+
+/* Instructor modal contact link styling: remove underline, use site dark-green
+   for the link color and brand orange on hover. Keep an accessible focus
+   outline. */
+#instructor-modal .modal-body a[href^="mailto:"] {
+  color: var(--text); /* dark green (exact match to site variable) */
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+#instructor-modal .modal-body a[href^="mailto:"]:hover,
+#instructor-modal .modal-body a[href^="mailto:"]:focus {
+  color: #f6630c; /* brand orange */
+  /* removed rectangular outline per request; keep color change on hover/focus */
+}

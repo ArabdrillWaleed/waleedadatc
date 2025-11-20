@@ -1,0 +1,43 @@
+.manager-quote {
+    position: relative;
+    margin-top: -3.5rem;  /* Moving up 5rem from original 1.5rem */
+    margin-left: 5rem;    /* Moving right 5rem */
+    max-width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-left: 3px solid #f6630c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quote-text {
+    font-style: italic;
+    color: #003c34;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.quote-author {
+    color: #003c34;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.15rem;
+    display: inline-block;
+}
+
+.quote-title {
+    color: #f6630c;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .manager-quote {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+}

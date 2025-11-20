@@ -1,0 +1,371 @@
+<!-- Backup of timeline section from index.html on 2025-11-20 -->
+<!-- Copy starts below -->
+<section class="timeline-hero section-padding" data-parallax="true" aria-label="Academy History Timeline">
+  <div class="timeline-container">
+    <div class="timeline-slides" role="list">
+      <div class="timeline-slide active" data-year="1993" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">The Establishment of Arabian Drilling Training Center in Dhahran Base.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="1995" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Deployment and operation of the CS Portable drilling and well control simulator.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2005" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Deployment and operation of the CS Ful Size drilling and well control simulator.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2006" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Well Control- Internation Association of Drilling Contractors(IADC) Well Control Accreditation Program (WellCAP)<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2012" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Deployment and operation of the CS Cyber Chair drilling and well control simulator.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2013" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">The Health and Safety Institute(HSI) - First Aid and Basic Life Support (BLS)<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2015" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">IADC WellSharp - 1st training provider outside the USA to obtain this accrediation.<br class="responsive-break">IADC DIT Accident Investigation and Drilling Technology.<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2016" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">IADC DIT - H2S Train the Trainer <br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2018" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Deployment and operation of four main simulators that are used to train and access students. <br class="responsive-break"><a class="learn-more" href="simulation-center.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2019" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">ISO:29993:2017 and ISO:9001:2015 certifications<br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2023" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Acquiring Arabian Drilling Academy Training Center new building.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2024" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Deployment and operation of the Bomco Full Size Cyber operator simulator.</div>
+        </div>
+      </div>
+      <div class="timeline-slide" data-year="2025" role="listitem">
+        <div class="slide-content">
+          <div class="year-content">Registration with The Technical and Vocational Training Corporation.<br class="responsive-break"><br class="responsive-break"><a class="learn-more" href="accreditations.html">Learn More →</a></div>
+        </div>
+      </div>
+    </div>
+    <nav class="timeline-years" aria-label="Timeline Years">
+      <div class="year-nav">
+        <div class="year-nav-track">
+          <button class="year-btn active" data-year="1993">1993</button>
+          <button class="year-btn" data-year="1995">1995</button>
+          <button class="year-btn" data-year="2005">2005</button>
+          <button class="year-btn" data-year="2006">2006</button>
+          <button class="year-btn" data-year="2012">2012</button>
+          <button class="year-btn" data-year="2013">2013</button>
+          <button class="year-btn" data-year="2015">2015</button>
+          <button class="year-btn" data-year="2016">2016</button>
+          <button class="year-btn" data-year="2018">2018</button>
+          <button class="year-btn" data-year="2019">2019</button>
+          <button class="year-btn" data-year="2023">2023</button>
+          <button class="year-btn" data-year="2024">2024</button>
+          <button class="year-btn" data-year="2025">2025</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+<!-- Copy ends above -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timeline | Arabian Drilling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon (local copies) -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144.png">
+
+  <!-- timeline styles removed — page will use global styles in `src/css/styles.css` -->
+</head>
+<body class="facility timeline">
+  <header class="site-header" role="banner">
+    <div class="container header-top">
+      <div class="header-utility">
+        <div class="util-left"></div>
+        <div class="util-right"></div>
+      </div>
+    </div>
+
+    <div class="container header-inner header-main-row">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="logo-img">
+        </a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="our-facility.html">OUR FACILITY</a>
+            <ul class="dropdown-menu">
+
+              <li><a href="simulation-center.html">Simulation Center</a></li>
+              <li><a href="accreditations.html">Accreditations</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="timeline.html">TIMELINE</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+          <li class="nav-item"><a class="nav-link" href="instructors.html">MEET OUR TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="image-hero color-1" aria-hidden="true" style="background-image: url('images/timeline.svg'); background-size: 100% 100%; background-position: center;">
+      <div class="hero-text-container">
+        <div class="hero-contact">Timeline</div>
+        <div class="hero-contact-subtitle">Our Journey of Excellence</div>
+      </div>
+    </section>
+    <!-- timeline widget removed — showing standard content panel below -->
+    <section class="content-panel container">
+      <h1>Timeline</h1>
+      <p>Explore our journey of growth and achievement in professional training and development.</p>
+
+  <div class="vertical-timeline" aria-label="Company timeline">
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/rig2.jpg')">
+            <div class="timeline-inner">
+              <h3>Facility</h3>
+              <p>The Establishment of Arabian Drilling Training Center in Dhahran Base.</p>
+              <div class="timeline-year">1993</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/invest.jpg')">
+            <div class="timeline-inner">
+              <h3>Facility</h3>
+              <p>Deployment and operation of the CS Portable drilling and well control simulator</p>
+              <div class="timeline-year">1995</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/person1.jpg')">
+            <div class="timeline-inner">
+              <h3>Accreditation</h3>
+              <p>Well Control - International Well Control Forum (IWCF)</p>
+              <div class="timeline-year">1995</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/rig1.jpg')">
+            <div class="timeline-inner">
+              <h3>Facility</h3>
+              <p>Deployment and operation of the CS Full Size drilling and well control simulator</p>
+              <div class="timeline-year">2005</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/invest.jpg')">
+            <div class="timeline-inner">
+              <h3>Accreditation</h3>
+              <p>Well Control - International Association of Drilling Contractors (IADC) Well Control Accreditation Program (WellCAP)</p>
+              <div class="timeline-year">2006</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/rig2.jpg')">
+            <div class="timeline-inner">
+              <h3>Facility</h3>
+              <p>Deployment and operation of the of CS Cyber Chair drilling and well control simulator </p>
+              <div class="timeline-year">2012</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/person1.jpg')">
+            <div class="timeline-inner">
+              <h3>Accreditation</h3>
+              <p>The Health & Safety Institute (HSI) - First Aid and Basic Life Support (BLS)</p>
+              <div class="timeline-year">2013</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content bg-image" style="--bg-image: url('images/rig1.jpg')">
+            <div class="timeline-inner">
+              <h3>Accreditation</h3>
+              <p>Well Control - International Association of Drilling Contractors (IADC) Well Control Accreditation Program (WellSharp), 1st training provider outside USA to obtain this accreditation</p>
+              <div class="timeline-year">2015</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content">
+            <h3>Accreditation</h3>
+            <p>IADC DIT - H2S Train The Trainer (TTT)</p>
+            <div class="timeline-year">2016</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content">
+            <h3>Facility</h3>
+            <p>A.	DS 5000 Full Size Hand Brake drilling and well control simulator<br><br>
+2.	DS 600 Full Size Cyber drilling and well control simulator<br><br>
+3.	Deployment and operation of the DS 20 Portable drilling and well control simulator<br><br>
+4.	Deployment and operation of the KS 6000 Full Size Offshore Crane simulator
+</p>
+            <div class="timeline-year">2018</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content">
+            <h3>Accreditation</h3>
+            <p>ISO:29993:2017 - International Standard specifying requirements for learning services outside of formal education.<br><br>ISO:90001:2015 - International Standard for Quality Management System</p>
+            <div class="timeline-year">2019</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content">
+            <h3>Facility</h3>
+            <p>Acquiring Arabian Drilling Academy Training Center new building.</p>
+            <div class="timeline-year">2023</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content">
+            <h3>Accreditation</h3>
+            <p>Deployment and operation of the Bomco Full Size Cyber Chair operator simulator </p>
+            <div class="timeline-year">2024</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content">
+            <h3>Facility</h3>
+            <p>State-of-the-art facility upgrades and new specialized training programs.</p>
+            <div class="timeline-year">2024</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" role="article">
+          <div class="timeline-content">
+            <h3>Accreditation</h3>
+            <p>Implementation of advanced digital learning platforms and virtual classrooms.</p>
+            <div class="timeline-year">2025</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" role="article">
+          <div class="timeline-content">
+            <h3>Accreditation</h3>
+            <p>Launch of advanced VR/AR training modules and expansion of global partnerships.</p>
+            <div class="timeline-year">2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-wrap">
+      <div class="footer-col footer-brand">
+        <img src="images/ADC_logo_color.svg" alt="Arabian Drilling logo" class="footer-brand-mark">
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-col footer-contact-compact">
+          <p style="font-weight:700;margin-bottom:.45rem">+966 138 297 363</p>
+          <p style="margin:0 0 .6rem"><a href="mailto:Trainingadmin@arabdrill.com">Trainingadmin@arabdrill.com</a></p>
+          <div style="margin-bottom:.6rem" class="footer-socials">
+            <a class="social-link" href="https://www.linkedin.com/company/arabian-drilling/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin.png" alt="LinkedIn" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://x.com/Arabiandrilling" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <img src="images/104501_twitter_bird_icon.png" alt="Twitter" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCch6ayRCP5hML3CCRUZLV8g?reload=9" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="images/2559760_media_social_video_youtube_icon.png" alt="YouTube" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/arabiandrilling/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="images/1161953_instagram_icon.png" alt="Instagram" class="social-icon" width="22" height="22" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="our-facility.html">Our Facility</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-links-col">
+          <ul class="footer-links-list">
+            <li><a href="instructors.html">Meet Our Team</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom footer-bottom-row">
+      <div class="footer-bottom-left">
+        <nav class="small-links"><a href="disclaimer.html">Disclaimer</a> <span class="sep">/</span> <a href="privacy-policy.html">Privacy Policy</a></nav>
+        <div class="copy">© <span id="year"></span> Arabian Drilling.</div>
+      </div>
+
+      <div class="footer-bottom-right">
+        <img src="images/Saudi_Vision_2030_logo.svg.png" alt="Vision 2030" class="footer-mark footer-2030">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

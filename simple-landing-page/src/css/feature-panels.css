@@ -1,0 +1,109 @@
+/* Feature Panels Grid Styles */
+.feature-panels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.feature-panels-grid .feature-panel {
+  background: #ffffff;
+  border-radius: 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-panels-grid .feature-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.feature-panels-grid .panel-preview {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+}
+
+.feature-panels-grid .panel-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.feature-panels-grid .feature-panel:hover .panel-preview img {
+  transform: scale(1.05);
+}
+
+.feature-panels-grid .panel-info {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-panels-grid .panel-title {
+  color: #f6630c;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  font-family: 'Certo Sans', sans-serif;
+  font-weight: bold;
+}
+
+.feature-panels-grid .panel-desc {
+  color: #264a46;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .feature-panels-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .feature-panels-grid .panel-preview {
+    height: 180px;
+  }
+  
+  .feature-panels-grid .panel-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-panels-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+  
+  .feature-panels-grid .panel-preview {
+    height: 160px;
+  }
+  
+  .feature-panels-grid .panel-info {
+    padding: 1.25rem;
+  }
+  
+  .feature-panels-grid .panel-title {
+    font-size: 1.2rem;
+    margin: 0 0 0.75rem;
+  }
+  
+  .feature-panels-grid .panel-desc {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,49 @@
+.modal-footer-register {
+  background: var(--ad-gold);
+  color: var(--ad-dark);
+  border: none;
+  padding: 0.45rem 0.85rem;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border-radius: 0;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px 0 rgba(0,60,52,0.07);
+  cursor: pointer;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  margin-left: auto;
+  align-self: center;
+}
+.modal-footer-register:hover, .modal-footer-register:focus {
+  background: #f6630c;
+  color: #fff;
+}
+
+/* Modal footer row for course modal */
+/* Modal footer row for course modal */
+ .modal-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.modal-footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-footer-register {
+  margin-left: 2rem;
+  align-self: center;
+  margin-top: 4px;
+	opacity: 0;
+	transform: translateY(-40px) scale(0.98);
+	transition: opacity 0.45s cubic-bezier(.4,0,.2,1), transform 0.45s cubic-bezier(.4,0,.2,1);
+}
+#amenities-modal[aria-hidden="false"] .modal-panel {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}

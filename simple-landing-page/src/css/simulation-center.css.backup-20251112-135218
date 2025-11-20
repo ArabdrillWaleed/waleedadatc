@@ -1,0 +1,223 @@
+.simulator-section {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.simulator-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.simulator-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #e5e7eb;  /* subtle grey divider */
+}
+
+.simulator-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;  /* remove border from last simulator */
+}
+
+.simulator-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.simulator-content {
+  flex: 1;
+}
+
+.simulator-image {
+  flex: 1;
+  max-width: 500px;
+  height: 400px; /* fixed visual box height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* no visible background/container */
+  position: relative;
+  overflow: hidden;
+}
+
+.simulator-image img {
+  /* show the full image without cropping; container stays same size */
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 0;
+  box-shadow: none; /* remove visible shadow */
+  transition: transform 0.28s ease, filter 0.28s ease;
+}
+
+/* When using background-image on the container, prefer these rules */
+.simulator-image[style*="background-image"] {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* show the full image without cropping */
+}
+
+.simulator-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 60, 52, 0.08);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Only trigger hover effects when hovering the image itself */
+.simulator-image:hover {
+  transform: none; /* keep container static */
+}
+
+.simulator-image:hover img {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(8,20,30,0.12);
+}
+
+/* remove any overlay indicator (previous ::after) */
+.simulator-image::after {
+  display: none;
+}
+
+.simulator-content h2 {
+  color: #f6630c; /* brand orange */
+  font-size: 2rem;
+  margin: 0 0 1.2rem;
+  font-weight: 250;
+  line-height: 1.3;
+  font-family: 'Certo Sans', sans-serif;
+}
+
+.simulator-content p {
+  color: #2f4b57;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  font-weight: 300;
+  font-family: 'Certo Sans', sans-serif;
+}
+
+/* Using shared intro-text class from styles.css instead */
+.simulator-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simulator-features li {
+  color: #2f4b57;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 1.75rem;
+  position: relative;
+  font-weight: 300;
+  font-family: 'Certo Sans', sans-serif;
+}
+
+.simulator-features li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 8px;
+  height: 8px;
+  background: #f6630c;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .simulator-row {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  .simulator-row.reverse {
+    flex-direction: column;
+  }
+
+  .simulator-image {
+    max-width: 100%;
+    height: 320px;
+  }
+
+  .simulator-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .simulator-summary {
+    font-size: 1.1rem;
+  }
+
+  .simulator-meta {
+    font-size: 1.05rem;
+  }
+
+  .simulator-features {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 520px;
+  }
+
+  .simulator-features li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .simulator-section {
+    padding: 1.5rem 0;
+  }
+
+  .simulator-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .simulator-content p,
+  .simulator-summary {
+    font-size: 0.98rem;
+  }
+
+  .simulator-image {
+    height: 220px;
+  }
+
+  .simulator-features li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Metadata styling for simulator blocks */
+.simulator-meta {
+  margin-bottom: 1rem;
+  color: #233b38;
+  font-size: 1.1rem;
+  font-family: 'Certo Sans', sans-serif;
+  font-weight: 300;
+}
+
+.simulator-meta div {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.simulator-meta strong {
+  font-weight: 250;
+  color: #003c34;
+  font-family: 'Certo Sans', sans-serif;
+}
