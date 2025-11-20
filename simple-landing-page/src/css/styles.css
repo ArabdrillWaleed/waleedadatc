@@ -4556,7 +4556,7 @@ html{scroll-behavior:smooth}
   transform: scale(1.1);
   transition: transform 0.3s ease-out;
   /* Add brand green shade overlay */
-  box-shadow: 0 0 0 9999px rgba(0, 60, 52, 0.45) inset;
+  box-shadow: 0 0 0 9999px rgba(63, 80, 76, 0.85) inset; /* much darker overlay for text visibility */
 }
 
 .timeline-slide::after {
@@ -4637,12 +4637,8 @@ html{scroll-behavior:smooth}
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  text-shadow:
-    0 3px 18px rgba(0,60,52,0.65), /* stronger glow */
-    0 1px 0 #f6630c,
-    0 0 2px #003c34,
-    0 0 8px #003c34; /* subtle outline and glow */
-  font-weight: 900;
+  /* text-shadow removed as requested */
+  font-weight: 600;
   letter-spacing: 1.2px;
 }
 
@@ -5308,7 +5304,8 @@ html{scroll-behavior:smooth}
 }
 
 .course-tag > div:first-child {
-  font-weight: 500;
+  font-family: 'Certo Sans', 'Montserrat', Arial, sans-serif;
+  font-weight: 500 !important;
   margin-bottom: 0.125rem;
   opacity: 0.9;
 }

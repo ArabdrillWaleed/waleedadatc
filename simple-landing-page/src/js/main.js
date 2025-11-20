@@ -35,11 +35,40 @@ window.addEventListener('unhandledrejection', function (evt) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-      // Loader logic: show loader until all images, fonts, and fragments are loaded
-      function hideSiteLoader() {
+            // Failsafe: always reveal site after max timeout (e.g., 6 seconds)
+            setTimeout(() => {
+              if (document.body.classList.contains('loading')) {
+                const loader = document.getElementById('site-loader');
+                if (loader) {
+                  loader.style.transition = 'opacity 0.15s cubic-bezier(.2,.9,.25,1)';
+                  loader.style.opacity = '0';
+                  setTimeout(() => {
+                    loader.style.display = 'none';
+                    document.body.classList.remove('loading');
+                    document.body.style.opacity = '1';
+                  }, 150);
+                } else {
+                  document.body.classList.remove('loading');
+                  document.body.style.opacity = '1';
+                }
+              }
+            }, 1000);
+      // Loader logic: keep white screen until everything is loaded, then fade in
+      function revealSite() {
         const loader = document.getElementById('site-loader');
-        if (loader) loader.style.display = 'none';
-        document.body.classList.remove('loading');
+        if (loader) {
+          loader.style.transition = 'opacity 0.15s cubic-bezier(.2,.9,.25,1)';
+          loader.style.opacity = '0';
+          setTimeout(() => {
+            loader.style.display = 'none';
+            document.body.classList.remove('loading');
+            document.body.style.transition = 'background 0.12s, opacity 0.15s cubic-bezier(.2,.9,.25,1)';
+            document.body.style.opacity = '1';
+          }, 150);
+        } else {
+          document.body.classList.remove('loading');
+          document.body.style.opacity = '1';
+        }
       }
 
       function allImagesLoaded() {
@@ -47,41 +76,48 @@ document.addEventListener('DOMContentLoaded', function() {
         return imgs.every(img => img.complete);
       }
 
-      function waitForImagesAndFonts() {
+      function waitForAllResources() {
         // Wait for images
         if (!allImagesLoaded()) {
           let checkInterval = setInterval(() => {
             if (allImagesLoaded()) {
               clearInterval(checkInterval);
-              waitForFonts();
+              waitForFontsAndFragments();
             }
           }, 50);
         } else {
-          waitForFonts();
+          waitForFontsAndFragments();
         }
       }
 
-      function waitForFonts() {
-        if (document.fonts && document.fonts.ready) {
-          document.fonts.ready.then(hideSiteLoader);
-        } else {
-          hideSiteLoader();
-        }
+      function waitForFontsAndFragments() {
+        let fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+        let fragmentsReady = new Promise(resolve => {
+          if (window._fragmentsInserted) resolve();
+          else {
+            document.addEventListener('fragments:inserted', function handler(ev) {
+              window._fragmentsInserted = true;
+              document.removeEventListener('fragments:inserted', handler);
+              resolve();
+            });
+          }
+        });
+        Promise.all([fontsReady, fragmentsReady]).then(() => {
+          // Wait for window.onload as final step
+          if (document.readyState === 'complete') {
+            revealSite();
+          } else {
+            window.addEventListener('load', revealSite);
+          }
+        });
       }
 
-      // Listen for fragments: hide loader only after fragments inserted
-      document.addEventListener('fragments:inserted', function(ev) {
-        // Wait for images and fonts after fragments
-        waitForImagesAndFonts();
-      });
-
-      // Add loading class to body
+      // Add loading class and hide body until reveal
       document.body.classList.add('loading');
+      document.body.style.opacity = '0';
 
-      // Fallback: hide loader after window.onload (all resources loaded)
-      window.addEventListener('load', function() {
-        hideSiteLoader();
-      });
+      // Start waiting for all resources
+      waitForAllResources();
     // Expose idempotent initializers so they can be called after fragments
     // are dynamically inserted into the page. These functions are safe to
     // call multiple times; they protect against double-registration.
